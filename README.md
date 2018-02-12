@@ -8,7 +8,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
 
 
 
-### Testing Links
+## Testing Links
 (http://rotmghrdtesting.appspot.com)
 (http://rotmgtesting.appspot.com)
 (http://realmtesting2.appspot.com)
@@ -21,7 +21,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
   crossdomain.xml
   $AssembleeGameClient<version>.swf
 
-app/
+**app/**
   $globalNews
   getLanguageString
   init
