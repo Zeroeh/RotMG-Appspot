@@ -1,10 +1,10 @@
 
 root url: http://realmofthemadgodhrd.appspot.com/
 
-directories marked with an asterisk (*) are internal server urls and will always return "<Failure/>"
-directories marked with a dollar sign ($) do not take any parameters (or they are not known)
-parameters marked with an ampersand (&) are OPTIONAL parameters and can be excluded from the url
-parameters marked with a percent sign (%) are GLOBAL parameters and can seemingly be used in any valid url
+directories marked with an asterisk (*) are internal server urls and will always return "<Failure/>" 
+directories marked with a dollar sign ($) do not take any parameters (or they are not known) 
+parameters marked with an ampersand (&) are OPTIONAL parameters and can be excluded from the url 
+parameters marked with a percent sign (%) are GLOBAL parameters and can seemingly be used in any valid url 
 
 
 
@@ -13,15 +13,15 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
 (http://rotmgtesting.appspot.com)
 (http://realmtesting2.appspot.com)
 
-/
-  $logowtext.png
-  $realmlogo.png
-  version.txt => time
-  servers.txt
-  crossdomain.xml
-  $AssembleeGameClient<version>.swf
+#/ 
+  $logowtext.png 
+  $realmlogo.png 
+  version.txt => time 
+  servers.txt 
+  crossdomain.xml 
+  $AssembleeGameClient<version>.swf 
 
-app/
+#app/
   $globalNews
   getLanguageString
   init
