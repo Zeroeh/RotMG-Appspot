@@ -163,7 +163,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * purchaseOffer
  * register
 
-kongregate/**
+**kongregate/**
  * getcredentials
  * register
 
