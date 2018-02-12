@@ -8,9 +8,8 @@
   $AssembleeGameClient<version>.swf
 
 **app/**
+  * $globalNews
 
-  $globalNews
+  * getLanguageString
 
-  getLanguageString
-  
-  init
+  * init
