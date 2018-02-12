@@ -1,5 +1,5 @@
 If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an "issue"
- (and not a pull request) and I will add it to this archive.
+ (**not** a pull request) and I will add it to this archive.
 
 
 root url: http://realmofthemadgodhrd.appspot.com/
