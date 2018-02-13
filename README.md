@@ -72,7 +72,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * => prints a message saying you are forbidden to access this page
 
 **log/**
- * logFteStep => returns a 
+ * logFteStep => returns an error
 
 **server/**
  * => all of these urls are internal
