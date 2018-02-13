@@ -4,7 +4,7 @@ If you have any contributions (new urls, previously unknown parameters, ect), fe
 
 root url: http://realmofthemadgodhrd.appspot.com/
 
-directories marked with an asterisk (*) are internal server urls and will always return "<Failure/>"
+directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
 
 directories marked with a dollar sign ($) do not take any parameters (or they are not known)
 
@@ -24,15 +24,19 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * version.txt => time
  * servers.txt
  * crossdomain.xml
- * $AssembleeGameClient<version>.swf
+ * draw.html
+ * TMloader(version).swf
+ * TextureMaker(version).swf
+ * AGCloader.swf
+ * $AssembleeGameClient(version).swf
 
 **app/**
  * $globalNews
- * getLanguageString
+ * getLanguageStrings => gameClientVersion, languageType
  * init
 
-**packages/**
- * getPackages
+**package/**
+ * getPackages => guid, password
 
 **mysterybox/**
  * getBoxes
@@ -99,7 +103,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
  * getCredits
  * *ban
- * v => same as verify???
+ * v => a, b
  * *claimLoginReward
  * saveSecurityQuestions
 
@@ -113,8 +117,8 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * resetDailyQuests => returns a message saying your ip was logged.
 
 **char/**
- * list
- * fame
+ * list => guid, password
+ * fame => accountId, charId
  * purchase
  * reskin
  * create
@@ -150,7 +154,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * listMembers
 
 **kabam/**
- * getcredentials
+ * getcredentials => userId
 
 **migrate/**
  * doMigration
@@ -159,12 +163,12 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
 
 **steamworks/**
  * finalizePurchase
- * getcredentials
+ * getcredentials => userId
  * purchaseOffer
  * register
 
 **kongregate/**
- * getcredentials
+ * getcredentials => userId
  * register
 
 **clientError/**
