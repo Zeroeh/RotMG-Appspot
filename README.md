@@ -47,6 +47,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * add
  * done
  * error
+ * kabamadd => no longer exists
 
 **picture/**
  * list
@@ -86,6 +87,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * verifyage
  * acceptTOS
  * changeEmail
+ * playFortuneGame
  * resetPassword
  * login
  * setName
@@ -96,6 +98,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * purchaseCharSlot
  * *purchaseVaultChest
  * purchaseSkin
+ * purchaseMysteryBox
  * purchasePackage
  * getBeginnerPackageTimeLeft
  * sendVerifyEmail
@@ -111,7 +114,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * list => timespan(week, month, all), ignore, charId, gameClientVersion, accountId
 
 **dailyLogin/**
- * fetchCalendar
+ * fetchCalendar => guid, password
 
 **dailyquest/**
  * resetDailyQuests => returns a message saying your ip was logged.
@@ -119,9 +122,10 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
 **char/**
  * list => guid, password
  * fame => accountId, charId
- * purchase
- * reskin
- * create
+ * *purchase
+ * *get
+ * *reskin
+ * *create
  * purchaseClassUnlock
  * delete => password, gameClientVersion, charId, reason (seems to be always 1), guid, ignore
 
@@ -149,8 +153,8 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * *changeRank
  * *removeMember
  * *create
- * getBoard
- * setBoard
+ * getBoard => guid, password
+ * setBoard => guid, password, board
  * listMembers
 
 **kabam/**
