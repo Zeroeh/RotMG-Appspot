@@ -12,6 +12,7 @@ parameters marked with an ampersand (&) are OPTIONAL parameters and can be exclu
 
 parameters marked with a percent sign (%) are GLOBAL parameters and can seemingly be used in any valid url
 
+Please note that deca can add or remove links at any time, and will certainly remove links posted here.
 
 ## Testing Links
 (http://rotmghrdtesting.appspot.com)
