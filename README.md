@@ -145,6 +145,9 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * *feed
  * *fuse
 
+**news/**
+ * => takes you to google sign in
+
 **arena/**
  * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
  * getPersonalBest
@@ -159,6 +162,7 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
 
 **kabam/**
  * getcredentials => userId
+ * link
 
 **migrate/**
  * doMigration
@@ -170,10 +174,12 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
  * getcredentials => userId
  * purchaseOffer
  * register
+ * link
 
 **kongregate/**
  * getcredentials => userId
  * register
+ * link
 
 **clientError/**
  * add
