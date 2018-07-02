@@ -101,6 +101,7 @@ Please note that deca can add or remove links at any time, and will certainly re
  * purchaseSkin
  * purchaseMysteryBox
  * purchasePackage
+ * getOwnedPetSkins
  * getBeginnerPackageTimeLeft
  * sendVerifyEmail
  * forgotPassword
