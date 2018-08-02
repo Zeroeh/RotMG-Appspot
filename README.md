@@ -2,7 +2,7 @@ If you have any contributions (new urls, previously unknown parameters, ect), fe
  (**not** a pull request) and I will add it to this archive.
 
 
-root url: http://realmofthemadgodhrd.appspot.com/
+root url: https://realmofthemadgodhrd.appspot.com/
 
 directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
 
