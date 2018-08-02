@@ -15,9 +15,9 @@ parameters marked with a percent sign (%) are GLOBAL parameters and can seemingl
 Please note that deca can add or remove links at any time, and will certainly remove links posted here.
 
 ## Testing Links
-(http://rotmghrdtesting.appspot.com)
-(http://rotmgtesting.appspot.com)
-(http://realmtesting2.appspot.com)
+(https://rotmghrdtesting.appspot.com)
+(https://rotmgtesting.appspot.com)
+(https://realmtesting2.appspot.com)
 
 **/**
  * $logowtext.png
@@ -29,6 +29,7 @@ Please note that deca can add or remove links at any time, and will certainly re
  * TMloader(version).swf
  * TextureMaker(version).swf
  * AGCloader.swf
+ * client
  * $AssembleeGameClient(version).swf
 
 **app/**
