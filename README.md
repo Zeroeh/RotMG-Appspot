@@ -90,7 +90,7 @@ Please note that deca can add or remove links at any time, and will certainly re
  * acceptTOS
  * changeEmail
  * playFortuneGame
- * resetPassword
+ * rp
  * login
  * setName
  * validateEmail
