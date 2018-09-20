@@ -93,7 +93,7 @@ Please note that deca can add or remove links at any time, and will certainly re
  * rp
  * login
  * setName
- * validateEmail
+ * validateEmail (removed)
  * supportVerify => guid, password, secret
  * *addStar
  * *addIgnore
