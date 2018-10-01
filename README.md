@@ -1,8 +1,7 @@
-If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an "issue"
- (**not** a pull request) and I will add it to this archive.
+If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you.
 
 
-root url: https://realmofthemadgodhrd.appspot.com/
+root url: **https://realmofthemadgodhrd.appspot.com/**
 
 directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
 
@@ -12,7 +11,7 @@ parameters marked with an ampersand (&) are OPTIONAL parameters and can be exclu
 
 parameters marked with a percent sign (%) are GLOBAL parameters and can seemingly be used in any valid url
 
-Please note that deca can add or remove links at any time, and will certainly remove links posted here.
+Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
 ## Testing Links
 (https://rotmghrdtesting.appspot.com)
@@ -192,5 +191,8 @@ Please note that deca can add or remove links at any time, and will certainly re
 
 **sfx/**
  * => too many mp3 files to list (you can find these in pserver sources)
+ 
+**music/**
+ * sorc.mp3 => main theme for realm
 
 Unknown payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
