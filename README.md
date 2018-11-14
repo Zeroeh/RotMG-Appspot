@@ -83,7 +83,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * remove
 
 **account/**
- * register
+ * register => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
  * verify
  * verifyage
  * acceptTOS
@@ -91,7 +91,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * playFortuneGame
  * rp
  * login
- * setName
+ * setName => guid, password, name
  * validateEmail (removed)
  * supportVerify => guid, password, secret
  * *addStar
