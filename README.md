@@ -88,7 +88,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * verifyage
  * acceptTOS
  * changeEmail
- * playFortuneGame
+ * playFortuneGame => id (probaly)
  * rp
  * login
  * setName => guid, password, name
@@ -108,12 +108,12 @@ Please note that deca can add or remove links at any time, and have already remo
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
  * getCredits
  * *ban
- * v => a, b
+ * v => a, b (a, action, g-recaptcha-response)
  * *claimLoginReward
- * saveSecurityQuestions
+ * saveSecurityQuestions => guid, password
 
 **fame/**
- * list => timespan(week, month, all), ignore, charId, gameClientVersion, accountId
+ * list => timespan(week, month, all), &ignore, charId, &gameClientVersion, accountId
 
 **dailyLogin/**
  * fetchCalendar => guid, password
@@ -135,7 +135,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * getNews
 
 **friends/**
- * requestFriend => ignore, guid, targetName, password, gameClientVersion
+ * requestFriend => ignore, guid, targetName, password, &gameClientVersion
  * getList => ignore, guid, gameClientVersion, password
  * getRequests => ignore, guid, gameClientVersion, password
  * acceptRequest => ignore, guid, targetName, gameClientVersion, password
