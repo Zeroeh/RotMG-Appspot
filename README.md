@@ -112,6 +112,12 @@ Please note that deca can add or remove links at any time, and have already remo
  * *claimLoginReward
  * saveSecurityQuestions
 
+**supportCampaign/**
+ * claim => guid, password
+ * unlock
+ * donate
+ * status
+ 
 **fame/**
  * list => timespan(week, month, all), ignore, charId, gameClientVersion, accountId
 
