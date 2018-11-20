@@ -114,9 +114,9 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **supportCampaign/**
  * claim => guid, password
- * unlock
- * donate
- * status
+ * unlock => guid, password
+ * donate => guid, password, amount
+ * status => guid, password
  
 **fame/**
  * list => timespan(week, month, all), ignore, charId, gameClientVersion, accountId
