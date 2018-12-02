@@ -187,7 +187,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * add
 
 **ugc/**
- * save
+ * save => name, description, thumbnail
 
 **sfx/**
  * => too many mp3 files to list (you can find these in pserver sources)
