@@ -84,11 +84,11 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **account/**
  * register => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
- * verify => guid, password (it seems that this link is used by Muledump)
+ * verify => guid, password (used by Muledump)
  * verifyage => guid, password
  * acceptTOS => guid, password
  * changeEmail
- * playFortuneGame => id (probaly)
+ * playFortuneGame => id (likely)
  * rp
  * login
  * setName => guid, password, name
@@ -98,9 +98,9 @@ Please note that deca can add or remove links at any time, and have already remo
  * *addIgnore
  * purchaseCharSlot => guid, password
  * *purchaseVaultChest
- * purchaseSkin => guid, password, probaly skin
- * purchaseMysteryBox => guid, password, probaly id
- * purchasePackage => guid, password, probaly id
+ * purchaseSkin => guid, password, (skin?)
+ * purchaseMysteryBox => guid, password, id
+ * purchasePackage => guid, password, id
  * getOwnedPetSkins => guid, password
  * getBeginnerPackageTimeLeft (removed)
  * sendVerifyEmail => guid, password
@@ -108,7 +108,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
  * getCredits => guid, password
  * *ban
- * v => a, b (a, action, g-recaptcha-response)
+ * v => a, action, g-recaptcha-response
  * *claimLoginReward
  * saveSecurityQuestions => guid, password
 
@@ -192,7 +192,7 @@ Please note that deca can add or remove links at any time, and have already remo
 **clientError/**
  * add
 
-**ugc/** (User Generated Content or Ulitmate Gaming Card)
+**ugc/** (User Generated Content)
  * save => name, description, thumbnail
 
 **sfx/**
