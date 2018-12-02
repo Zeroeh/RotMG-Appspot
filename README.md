@@ -84,11 +84,11 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **account/**
  * register => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
- * verify
- * verifyage
- * acceptTOS
+ * verify => guid, password (it seems that this link is used by Muledump)
+ * verifyage => guid, password
+ * acceptTOS => guid, password
  * changeEmail
- * playFortuneGame
+ * playFortuneGame => id (probaly)
  * rp
  * login
  * setName => guid, password, name
@@ -96,21 +96,21 @@ Please note that deca can add or remove links at any time, and have already remo
  * supportVerify => guid, password, secret
  * *addStar
  * *addIgnore
- * purchaseCharSlot
+ * purchaseCharSlot => guid, password
  * *purchaseVaultChest
- * purchaseSkin
- * purchaseMysteryBox
- * purchasePackage
- * getOwnedPetSkins
- * getBeginnerPackageTimeLeft
- * sendVerifyEmail
- * forgotPassword
+ * purchaseSkin => guid, password, probaly skin
+ * purchaseMysteryBox => guid, password, probaly id
+ * purchasePackage => guid, password, probaly id
+ * getOwnedPetSkins => guid, password
+ * getBeginnerPackageTimeLeft (removed)
+ * sendVerifyEmail => guid, password
+ * forgotPassword => guid, password
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
- * getCredits
+ * getCredits => guid, password
  * *ban
- * v => a, b
+ * v => a, b (a, action, g-recaptcha-response)
  * *claimLoginReward
- * saveSecurityQuestions
+ * saveSecurityQuestions => guid, password
 
 **supportCampaign/**
  * claim => guid, password
@@ -119,7 +119,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * status => guid, password
  
 **fame/**
- * list => timespan(week, month, all), ignore, charId, gameClientVersion, accountId
+ * list => timespan(week, month, all), &ignore, charId, &gameClientVersion, accountId
 
 **dailyLogin/**
  * fetchCalendar => guid, password
@@ -141,7 +141,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * getNews
 
 **friends/**
- * requestFriend => ignore, guid, targetName, password, gameClientVersion
+ * requestFriend => ignore, guid, targetName, password, &gameClientVersion
  * getList => ignore, guid, gameClientVersion, password
  * getRequests => ignore, guid, gameClientVersion, password
  * acceptRequest => ignore, guid, targetName, gameClientVersion, password
@@ -192,8 +192,8 @@ Please note that deca can add or remove links at any time, and have already remo
 **clientError/**
  * add
 
-**ugc/**
- * save
+**ugc/** (User Generated Content or Ulitmate Gaming Card)
+ * save => name, description, thumbnail
 
 **sfx/**
  * => too many mp3 files to list (you can find these in pserver sources)
