@@ -84,9 +84,9 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **account/**
  * register => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
- * verify
- * verifyage
- * acceptTOS
+ * verify => guid, password (it seems that this link is used by Muledump)
+ * verifyage => guid, password
+ * acceptTOS => guid, password
  * changeEmail
  * playFortuneGame => id (probaly)
  * rp
@@ -96,17 +96,17 @@ Please note that deca can add or remove links at any time, and have already remo
  * supportVerify => guid, password, secret
  * *addStar
  * *addIgnore
- * purchaseCharSlot
+ * purchaseCharSlot => guid, password
  * *purchaseVaultChest
- * purchaseSkin
- * purchaseMysteryBox
- * purchasePackage
- * getOwnedPetSkins
- * getBeginnerPackageTimeLeft
- * sendVerifyEmail
- * forgotPassword
+ * purchaseSkin => guid, password, probaly skin
+ * purchaseMysteryBox => guid, password, probaly id
+ * purchasePackage => guid, password, probaly id
+ * getOwnedPetSkins => guid, password
+ * getBeginnerPackageTimeLeft (removed)
+ * sendVerifyEmail => guid, password
+ * forgotPassword => guid, password
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
- * getCredits
+ * getCredits => guid, password
  * *ban
  * v => a, b (a, action, g-recaptcha-response)
  * *claimLoginReward
