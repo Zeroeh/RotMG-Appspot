@@ -186,7 +186,7 @@ Please note that deca can add or remove links at any time, and have already remo
 **clientError/**
  * add
 
-**ugc/**
+**ugc/** (User Generated Content or Ulitmate Gaming Card)
  * save => name, description, thumbnail
 
 **sfx/**
