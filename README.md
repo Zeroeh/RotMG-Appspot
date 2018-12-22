@@ -1,22 +1,20 @@
 If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you.
 
 
-root url: **https://realmofthemadgodhrd.appspot.com/**
-
-directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
-
-directories marked with a dollar sign ($) do not take any parameters (or they are not known)
-
-parameters marked with an ampersand (&) are OPTIONAL parameters and can be excluded from the url
-
-parameters marked with a percent sign (%) are GLOBAL parameters and can seemingly be used in any valid url
-
-Please note that deca can add or remove links at any time, and have already removed a few links posted here.
+Root url: **https://realmofthemadgodhrd.appspot.com/**
 
 ## Testing Links
 (https://rotmghrdtesting.appspot.com)
 (https://rotmgtesting.appspot.com)
 (https://realmtesting2.appspot.com)
+
+Directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
+
+Directories marked with a dollar sign ($) do not take any parameters (or they are not known)
+
+Parameters marked with an ampersand (&) are OPTIONAL parameters and can be excluded from the url
+
+Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
 **/**
  * $logowtext.png
@@ -84,11 +82,11 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **account/**
  * register => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
- * verify => guid, password (it seems that this link is used by Muledump)
+ * verify => guid, password (used by Muledump)
  * verifyage => guid, password
  * acceptTOS => guid, password
  * changeEmail
- * playFortuneGame => id (probaly)
+ * playFortuneGame => id (likely)
  * rp
  * login
  * setName => guid, password, name
@@ -98,9 +96,9 @@ Please note that deca can add or remove links at any time, and have already remo
  * *addIgnore
  * purchaseCharSlot => guid, password
  * *purchaseVaultChest
- * purchaseSkin => guid, password, probaly skin
- * purchaseMysteryBox => guid, password, probaly id
- * purchasePackage => guid, password, probaly id
+ * purchaseSkin => guid, password, (skin?)
+ * purchaseMysteryBox => guid, password, id
+ * purchasePackage => guid, password, id
  * getOwnedPetSkins => guid, password
  * getBeginnerPackageTimeLeft (removed)
  * sendVerifyEmail => guid, password
@@ -108,10 +106,16 @@ Please note that deca can add or remove links at any time, and have already remo
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
  * getCredits => guid, password
  * *ban
- * v => a, b (a, action, g-recaptcha-response)
+ * v => a, action, g-recaptcha-response
  * *claimLoginReward
  * saveSecurityQuestions => guid, password
 
+**supportCampaign/**
+ * claim => guid, password
+ * unlock => guid, password
+ * donate => guid, password, amount
+ * status => guid, password
+ 
 **fame/**
  * list => timespan(week, month, all), &ignore, charId, &gameClientVersion, accountId
 
