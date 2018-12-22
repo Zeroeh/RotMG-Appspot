@@ -119,7 +119,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * fetchCalendar => guid, password
 
 **dailyquest/**
- * resetDailyQuests => returns a message saying your ip was logged.
+ * resetDailyQuests => returns this error: This feature is disabled. Your attempt of using it was noted.
 
 **char/**
  * list => guid, password
@@ -186,7 +186,7 @@ Please note that deca can add or remove links at any time, and have already remo
 **clientError/**
  * add
 
-**ugc/** (User Generated Content or Ulitmate Gaming Card)
+**ugc/** (User Generated Content)
  * save => name, description, thumbnail
 
 **sfx/**
