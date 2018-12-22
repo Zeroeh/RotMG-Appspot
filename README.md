@@ -67,7 +67,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * rotmg.Xsolla.js
 
 **admin/**
- * => redirects to google app engine sign in
+ * => redirects to google app engine sign in (removed)
 
 **data/**
  * => prints a message saying you are forbidden to access this page
@@ -124,7 +124,8 @@ Please note that deca can add or remove links at any time, and have already remo
  * fetchCalendar => guid, password
 
 **dailyquest/**
- * resetDailyQuests => returns this error: This feature is disabled. Your attempt of using it was noted.
+ Looks like a regular stub, but it may be dangerous for account
+ * resetDailyQuests => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
 
 **char/**
  * list => guid, password
@@ -137,7 +138,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * delete => password, gameClientVersion, charId, reason (seems to be always 1), guid, ignore
 
 **inGameNews/**
- * getNews
+ * &getNews
 
 **friends/**
  * requestFriend => ignore, guid, targetName, password, &gameClientVersion
@@ -153,7 +154,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *fuse
 
 **news/**
- * => takes you to google sign in
+ * => takes you to google sign in (removed)
 
 **arena/**
  * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
@@ -200,4 +201,5 @@ Please note that deca can add or remove links at any time, and have already remo
 **music/**
  * sorc.mp3 => main theme for realm
 
-Unknown payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
+**Unknown urls**
+Payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
