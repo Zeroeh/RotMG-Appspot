@@ -1,12 +1,13 @@
 If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you.
 
 
-Root url: **https://realmofthemadgodhrd.appspot.com/**
+## Root url
+- https://realmofthemadgodhrd.appspot.com
 
 ## Testing Links
-(https://rotmghrdtesting.appspot.com)
-(https://rotmgtesting.appspot.com)
-(https://realmtesting2.appspot.com)
+- https://rotmghrdtesting.appspot.com
+- https://rotmgtesting.appspot.com
+- https://realmtesting2.appspot.com
 
 Directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
 
