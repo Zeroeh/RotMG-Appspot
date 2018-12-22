@@ -13,7 +13,7 @@ Directories marked with an asterisk (*) are internal server urls and will always
 
 Directories marked with a dollar sign ($) do not take any parameters (or they are not known)
 
-Parameters marked with an ampersand (&) are OPTIONAL parameters and can be excluded from the url
+Parameters marked with an ampersand (&) are **optional** parameters and can be excluded from the url
 
 Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
@@ -39,7 +39,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * getPackages => guid, password
 
 **mysterybox/**
- * getBoxes
+ * getBoxes => returns error
 
 **credits/**
  * getoffers
@@ -118,7 +118,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * status => guid, password
  
 **fame/**
- * list => timespan(week, month, all), &ignore, charId, &gameClientVersion, accountId
+ * list => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
 
 **dailyLogin/**
  * fetchCalendar => guid, password
@@ -135,7 +135,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *reskin
  * *create
  * purchaseClassUnlock
- * delete => password, gameClientVersion, charId, reason (seems to be always 1), guid, ignore
+ * delete => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
 
 **inGameNews/**
  * &getNews
@@ -158,7 +158,7 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **arena/**
  * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
- * getPersonalBest
+ * getPersonalBest => guid, password
 
 **guild/**
  * *changeRank
@@ -166,7 +166,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *create
  * getBoard => guid, password
  * setBoard => guid, password, board
- * listMembers
+ * listMembers => guid, password
 
 **kabam/**
  * getcredentials => userId
@@ -174,20 +174,20 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **migrate/**
  * doMigration
- * progress
+ * progress => guid
  * userAccountReset
 
 **steamworks/**
  * finalizePurchase
  * getcredentials => userId
  * purchaseOffer
- * register
- * link
+ * register (disabled)
+ * link (disabled)
 
 **kongregate/**
  * getcredentials => userId
- * register
- * link
+ * register => userId
+ * link (disabled)
 
 **clientError/**
  * add
@@ -202,4 +202,5 @@ Please note that deca can add or remove links at any time, and have already remo
  * sorc.mp3 => main theme for realm
 
 **Unknown urls**
+
 Payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
