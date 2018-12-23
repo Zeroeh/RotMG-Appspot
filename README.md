@@ -1,22 +1,21 @@
 If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you.
 
 
-root url: **https://realmofthemadgodhrd.appspot.com/**
-
-directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
-
-directories marked with a dollar sign ($) do not take any parameters (or they are not known)
-
-parameters marked with an ampersand (&) are OPTIONAL parameters and can be excluded from the url
-
-parameters marked with a percent sign (%) are GLOBAL parameters and can seemingly be used in any valid url
-
-Please note that deca can add or remove links at any time, and have already removed a few links posted here.
+## Root url
+- https://realmofthemadgodhrd.appspot.com
 
 ## Testing Links
-(https://rotmghrdtesting.appspot.com)
-(https://rotmgtesting.appspot.com)
-(https://realmtesting2.appspot.com)
+- https://rotmghrdtesting.appspot.com
+- https://rotmgtesting.appspot.com
+- https://realmtesting2.appspot.com
+
+Directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
+
+Directories marked with a dollar sign ($) do not take any parameters (or they are not known)
+
+Parameters marked with an ampersand (&) are **optional** parameters and can be excluded from the url
+
+Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
 **/**
  * $logowtext.png
@@ -40,7 +39,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * getPackages => guid, password
 
 **mysterybox/**
- * getBoxes
+ * getBoxes => returns error
 
 **credits/**
  * getoffers
@@ -68,7 +67,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * rotmg.Xsolla.js
 
 **admin/**
- * => redirects to google app engine sign in
+ * => redirects to google app engine sign in (removed)
 
 **data/**
  * => prints a message saying you are forbidden to access this page
@@ -119,13 +118,14 @@ Please note that deca can add or remove links at any time, and have already remo
  * status => guid, password
  
 **fame/**
- * list => timespan(week, month, all), &ignore, charId, &gameClientVersion, accountId
+ * list => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
 
 **dailyLogin/**
  * fetchCalendar => guid, password
 
 **dailyquest/**
- * resetDailyQuests => returns a message saying your ip was logged.
+ Looks like a regular stub, but it may be dangerous for account
+ * resetDailyQuests => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
 
 **char/**
  * list => guid, password
@@ -135,10 +135,10 @@ Please note that deca can add or remove links at any time, and have already remo
  * *reskin
  * *create
  * purchaseClassUnlock
- * delete => password, gameClientVersion, charId, reason (seems to be always 1), guid, ignore
+ * delete => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
 
 **inGameNews/**
- * getNews
+ * &getNews
 
 **friends/**
  * requestFriend => ignore, guid, targetName, password, &gameClientVersion
@@ -154,11 +154,11 @@ Please note that deca can add or remove links at any time, and have already remo
  * *fuse
 
 **news/**
- * => takes you to google sign in
+ * => takes you to google sign in (removed)
 
 **arena/**
  * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
- * getPersonalBest
+ * getPersonalBest => guid, password
 
 **guild/**
  * *changeRank
@@ -166,7 +166,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *create
  * getBoard => guid, password
  * setBoard => guid, password, board
- * listMembers
+ * listMembers => guid, password
 
 **kabam/**
  * getcredentials => userId
@@ -174,20 +174,20 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **migrate/**
  * doMigration
- * progress
+ * progress => guid
  * userAccountReset
 
 **steamworks/**
  * finalizePurchase
  * getcredentials => userId
  * purchaseOffer
- * register
- * link
+ * register (disabled)
+ * link (disabled)
 
 **kongregate/**
  * getcredentials => userId
- * register
- * link
+ * register => userId
+ * link (disabled)
 
 **clientError/**
  * add
@@ -201,4 +201,6 @@ Please note that deca can add or remove links at any time, and have already remo
 **music/**
  * sorc.mp3 => main theme for realm
 
-Unknown payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
+**Unknown urls**
+
+Payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
