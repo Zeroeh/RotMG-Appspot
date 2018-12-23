@@ -67,7 +67,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * rotmg.Xsolla.js
 
 **admin/**
- * => redirects to google app engine sign in (removed)
+ * => redirects to google app engine sign in
 
 **data/**
  * => prints a message saying you are forbidden to access this page
@@ -154,7 +154,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *fuse
 
 **news/**
- * => takes you to google sign in (removed)
+ * => takes you to google sign in
 
 **arena/**
  * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
