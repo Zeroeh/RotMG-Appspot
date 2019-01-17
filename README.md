@@ -3,11 +3,12 @@ If you have any contributions (new urls, previously unknown parameters, ect), fe
 
 ## Root url
 - https://realmofthemadgodhrd.appspot.com
+- https://realmofthemadgod.appspot.com (used before kabam account migration)
 
 ## Testing Links
-- https://rotmghrdtesting.appspot.com
-- https://rotmgtesting.appspot.com
-- https://realmtesting2.appspot.com
+- https://rotmghrdtesting.appspot.com (old kabam test server used for account migration testing)
+- https://rotmgtesting.appspot.com (the current rotmg testing server)
+- https://realmtesting2.appspot.com ("hidden" testing server for private testers)
 
 Directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
 
