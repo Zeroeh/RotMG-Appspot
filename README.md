@@ -104,7 +104,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * getOwnedPetSkins => guid, password
  * getBeginnerPackageTimeLeft (removed)
  * sendVerifyEmail => guid, password
- * forgotPassword => guid, password
+ * forgotPassword => guid
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
  * getCredits => guid, password
  * *ban
