@@ -23,6 +23,7 @@ Please note that deca can add or remove links at any time, and have already remo
 - `game_net_user_id`: _empty_
 - `ignore`: _random number from 1000 to 999999_
 - `gameClientVersion`: X31.2.3 _for example_
+- `languageType`: en
 
 **/**
  * $logowtext.png
