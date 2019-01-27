@@ -1,4 +1,4 @@
-If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you.
+If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Hey! Don't forget to check new CONTRIBUTE.md guide**
 
 
 ## Root url
