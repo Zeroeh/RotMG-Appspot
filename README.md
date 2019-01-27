@@ -3,11 +3,12 @@ If you have any contributions (new urls, previously unknown parameters, ect), fe
 
 ## Root url
 - https://realmofthemadgodhrd.appspot.com
+- https://realmofthemadgod.appspot.com (used before kabam account migration)
 
 ## Testing Links
-- https://rotmghrdtesting.appspot.com
-- https://rotmgtesting.appspot.com
-- https://realmtesting2.appspot.com
+- https://rotmghrdtesting.appspot.com (old kabam test server used for account migration testing)
+- https://rotmgtesting.appspot.com (the current rotmg testing server)
+- https://realmtesting2.appspot.com ("hidden" testing server for private testers)
 
 Directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
 
@@ -67,7 +68,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * rotmg.Xsolla.js
 
 **admin/**
- * => redirects to google app engine sign in (removed)
+ * => redirects to google app engine sign in
 
 **data/**
  * => prints a message saying you are forbidden to access this page
@@ -103,7 +104,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * getOwnedPetSkins => guid, password
  * getBeginnerPackageTimeLeft (removed)
  * sendVerifyEmail => guid, password
- * forgotPassword => guid, password
+ * forgotPassword => guid
  * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
  * getCredits => guid, password
  * *ban
@@ -154,7 +155,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *fuse
 
 **news/**
- * => takes you to google sign in (removed)
+ * => takes you to google sign in
 
 **arena/**
  * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
