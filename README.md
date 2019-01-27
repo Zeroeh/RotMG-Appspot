@@ -20,9 +20,9 @@ Please note that deca can add or remove links at any time, and have already remo
 
 **Often URL parametrs**
 - `game_net`: rotmg
-- `game_net_user_id`: __empty__
-- `ignore`: __random number from 1000 to 999999__
-- `gameClientVersion`: X31.2.3 __for example__
+- `game_net_user_id`: _empty_
+- `ignore`: _random number from 1000 to 999999_
+- `gameClientVersion`: X31.2.3 _for example_
 
 **/**
  * $logowtext.png
