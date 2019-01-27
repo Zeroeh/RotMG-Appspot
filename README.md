@@ -18,6 +18,12 @@ Parameters marked with an ampersand (&) are **optional** parameters and can be e
 
 Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
+**Often URL parametrs**
+- `game_net`: rotmg
+- `game_net_user_id`: __empty__
+- `ignore`: __random number from 1000 to 999999__
+- `gameClientVersion`: X31.2.3 __for example__
+
 **/**
  * $logowtext.png
  * $realmlogo.png
@@ -112,7 +118,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *claimLoginReward
  * saveSecurityQuestions => guid, password
 
-**supportCampaign/**
+**supportCampaign/** (campaign is not active)
  * claim => guid, password
  * unlock => guid, password
  * donate => guid, password, amount
