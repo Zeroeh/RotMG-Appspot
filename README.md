@@ -18,10 +18,10 @@ Parameters marked with an ampersand (&) are **optional** parameters and can be e
 
 Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
-**Often URL parametrs**
+**Often URL parameters**
 - `game_net`: rotmg
 - `game_net_user_id`: _empty_
-- `ignore`: _random number from 1000 to 999999_
+- `ignore`: _random number from 1000 to 999999_ (used for cache busting)
 - `gameClientVersion`: X31.2.3 _for example_
 - `languageType`: en
 
