@@ -1,4 +1,4 @@
-If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you.
+If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Hey! Don't forget to check new CONTRIBUTE.md guide**
 
 
 ## Root url
@@ -17,6 +17,13 @@ Directories marked with a dollar sign ($) do not take any parameters (or they ar
 Parameters marked with an ampersand (&) are **optional** parameters and can be excluded from the url
 
 Please note that deca can add or remove links at any time, and have already removed a few links posted here.
+
+**Often URL parametrs**
+- `game_net`: rotmg
+- `game_net_user_id`: _empty_
+- `ignore`: _random number from 1000 to 999999_
+- `gameClientVersion`: X31.2.3 _for example_
+- `languageType`: en
 
 **/**
  * $logowtext.png
@@ -112,7 +119,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *claimLoginReward
  * saveSecurityQuestions => guid, password
 
-**supportCampaign/**
+**supportCampaign/** (campaign is not active)
  * claim => guid, password
  * unlock => guid, password
  * donate => guid, password, amount
