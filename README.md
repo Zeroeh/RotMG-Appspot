@@ -118,6 +118,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * v => a, action, g-recaptcha-response
  * *claimLoginReward
  * saveSecurityQuestions => guid, password
+ * forgotpasswordPage => links to a page where you enter your email
 
 **supportCampaign/** (campaign is not active)
  * claim => guid, password
