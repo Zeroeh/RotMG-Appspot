@@ -143,6 +143,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * *get
  * *reskin
  * *create
+ * *update
  * purchaseClassUnlock
  * delete => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
 
