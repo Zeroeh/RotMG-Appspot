@@ -12,9 +12,7 @@ If you have any contributions (new urls, previously unknown parameters, ect), fe
 
 Directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
 
-Directories marked with a dollar sign ($) do not take any parameters (or they are not known)
-
-Parameters marked with an ampersand (&) are **optional** parameters and can be excluded from the url
+Endpoints without any listed arguments could still take certain parameters, but they might not be listed here yet due to incompletedness.
 
 Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
@@ -29,50 +27,50 @@ Please note that deca can add or remove links at any time, and have already remo
  * ``logowtext.png``
  * ``realmlogo.png``
  * ``version.txt`` => time
- * servers.txt
- * crossdomain.xml
- * draw.html
- * TMloader(version).swf
- * TextureMaker(version).swf
- * AGCloader.swf
- * client
- * $AssembleeGameClient(version).swf
+ * ``servers.txt``
+ * ``crossdomain.xml``
+ * ``draw.html``
+ * ``TMloader{version}.swf``
+ * ``TextureMaker{version}.swf``
+ * ``AGCloader.swf``
+ * ``client``
+ * ``AssembleeGameClient{version}.swf``
 
 ``app/``
- * $globalNews
- * getLanguageStrings => gameClientVersion, languageType
- * init
+ * ``globalNews``
+ * ``getLanguageStrings`` => gameClientVersion, languageType
+ * ``init``
 
 ``package/``
- * getPackages => guid, password
+ * ``getPackages`` => guid, password
 
 ``mysterybox/``
- * getBoxes => returns error
+ * ``getBoxes`` => returns error
 
 ``credits/``
- * getoffers
- * pwpurchase
- * add
- * done
- * error
- * kabamadd => no longer exists
+ * ``getoffers``
+ * ``pwpurchase``
+ * ``add``
+ * ``done``
+ * ``error``
+ * ``kabamadd`` => no longer exists
 
 ``picture/``
- * list
- * get
+ * ``list``
+ * ``get``
 
 ``images/``
- * DecaLogoWhite.png
- * kabamLogo192x97.png
+ * ``DecaLogoWhite.png``
+ * ``kabamLogo192x97.png``
 
 ``css/``
- * rotmg.common.css?__rotmg_cb=1424381358
+ * ``rotmg.common.css?__rotmg_cb=1424381358``
 
 ``js/``
- * rotmg.UrlLib.js
- * rotmg.Paymentwall.js
- * jquery-1.8.0.min.js
- * rotmg.Xsolla.js
+ * ``rotmg.UrlLib.js``
+ * ``rotmg.Paymentwall.js``
+ * ``jquery-1.8.0.min.js``
+ * ``rotmg.Xsolla.js``
 
 ``admin/``
  * => redirects to google app engine sign in
@@ -81,44 +79,44 @@ Please note that deca can add or remove links at any time, and have already remo
  * => prints a message saying you are forbidden to access this page
 
 ``log/``
- * logFteStep => returns an error
+ * ``logFteStep`` => returns an error
 
 ``server/``
  * => all of these urls are internal
- * list
- * add
- * remove
+ * ``list``
+ * ``add``
+ * ``remove``
 
 ``account/``
- * register => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
- * verify => guid, password (used by Muledump)
- * verifyage => guid, password
- * acceptTOS => guid, password
- * changeEmail
- * playFortuneGame => id (likely)
- * rp
- * login
- * setName => guid, password, name
- * validateEmail (removed)
- * supportVerify => guid, password, secret
- * *addStar
- * *addIgnore
- * purchaseCharSlot => guid, password
- * *purchaseVaultChest
- * purchaseSkin => guid, password, (skin?)
- * purchaseMysteryBox => guid, password, id
- * purchasePackage => guid, password, id
- * getOwnedPetSkins => guid, password
- * getBeginnerPackageTimeLeft (removed)
- * sendVerifyEmail => guid, password
- * forgotPassword => guid
- * changePassword => newPassword, &ignore, guid, password, &gameClientVersion
- * getCredits => guid, password
- * *ban
- * v => a, action, g-recaptcha-response
- * *claimLoginReward
- * saveSecurityQuestions => guid, password
- * forgotpasswordPage => links to a page where you enter your email
+ * ``register`` => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
+ * ``verify`` => guid, password (used by Muledump)
+ * ``verifyage`` => guid, password
+ * ``acceptTOS`` => guid, password
+ * ``changeEmail``
+ * ``playFortuneGame`` => id (likely)
+ * ``rp``
+ * ``login``
+ * ``setName`` => guid, password, name
+ * ``validateEmail`` (removed)
+ * ``supportVerify`` => guid, password, secret
+ * ``*addStar``
+ * ``*addIgnore``
+ * ``purchaseCharSlot`` => guid, password
+ * ``*purchaseVaultChest``
+ * ``purchaseSkin`` => guid, password, (skin?)
+ * ``purchaseMysteryBox`` => guid, password, id
+ * ``purchasePackage`` => guid, password, id
+ * ``getOwnedPetSkins`` => guid, password
+ * ``getBeginnerPackageTimeLeft`` (removed)
+ * ``sendVerifyEmail`` => guid, password
+ * ``forgotPassword`` => guid
+ * ``changePassword`` => newPassword, &ignore, guid, password, &gameClientVersion
+ * ``getCredits`` => guid, password
+ * ``*ban``
+ * ``v`` => a, action, g-recaptcha-response
+ * ``*claimLoginReward``
+ * ``saveSecurityQuestions`` => guid, password
+ * ``forgotpasswordPage`` => links to a page where you enter your email
 
 ``supportCampaign/`` (campaign is not active)
  * claim => guid, password
