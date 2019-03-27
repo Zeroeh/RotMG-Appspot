@@ -1,7 +1,7 @@
-If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Hey! Don't forget to check new CONTRIBUTE.md guide**
+If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Hey! Don't forget to check the new CONTRIBUTE.md guide**
 
 
-## Root url
+## Root URL
 - https://realmofthemadgodhrd.appspot.com
 - https://realmofthemadgod.appspot.com (used before kabam account migration)
 
