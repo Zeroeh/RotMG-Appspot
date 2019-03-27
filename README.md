@@ -57,7 +57,7 @@ Please note that deca can add or remove links at any time, and have already remo
  * ``error``
  * ``kabamadd`` => no longer exists
 
-``picture/``
+``picture/`` => Seems to redirect to google login now
  * ``list``
  * ``get``
 
