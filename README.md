@@ -10,23 +10,25 @@ If you have any contributions (new urls, previously unknown parameters, ect), fe
 - https://rotmgtesting.appspot.com (the current rotmg testing server)
 - https://realmtesting2.appspot.com ("hidden" testing server for private testers)
 
-Directories marked with an asterisk (*) are internal server urls and will always return "\<Failure/\>"
+Directories marked with an asterisk (*) are internal server urls and will always return ``\<Failure/\>``
 
 Endpoints without any listed arguments could still take certain parameters, but they might not be listed here yet due to incompletedness.
 
 Please note that deca can add or remove links at any time, and have already removed a few links posted here.
 
-**Often URL parameters**
-- `game_net`: rotmg
+**Known URL parameters** (Sorted by key:value, or example value)
+- `game_net`:`rotmg`
 - `game_net_user_id`: _empty_
-- `ignore`: _random number from 1000 to 999999_ (used for cache busting)
-- `gameClientVersion`: X31.2.3 _for example_
-- `languageType`: en
+- `ignore`:`23424` _random number from 1000 to 999999_ (used for cache busting)
+- `gameClientVersion`:`X31.2.3` (current game version)
+- `languageType`:`en`
+- `guid`:`example@mail.com` (email)
+- `password`:`password123`
 
 ``/``
  * ``logowtext.png``
  * ``realmlogo.png``
- * ``version.txt`` => time
+ * ``version.txt`` => time (unix time)
  * ``servers.txt``
  * ``crossdomain.xml``
  * ``draw.html``
