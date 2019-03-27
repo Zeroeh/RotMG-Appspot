@@ -25,7 +25,7 @@ Please note that deca can add or remove links at any time, and have already remo
 - `gameClientVersion`: X31.2.3 _for example_
 - `languageType`: en
 
-**/**
+``**/**``
  * ``logowtext.png``
  * ``realmlogo.png``
  * ``version.txt`` => time
