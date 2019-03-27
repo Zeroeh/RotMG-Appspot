@@ -25,7 +25,7 @@ Please note that deca can add or remove links at any time, and have already remo
 - `gameClientVersion`: X31.2.3 _for example_
 - `languageType`: en
 
-``**/**``
+``/``
  * ``logowtext.png``
  * ``realmlogo.png``
  * ``version.txt`` => time
@@ -38,18 +38,18 @@ Please note that deca can add or remove links at any time, and have already remo
  * client
  * $AssembleeGameClient(version).swf
 
-**app/**
+``app/``
  * $globalNews
  * getLanguageStrings => gameClientVersion, languageType
  * init
 
-**package/**
+``package/``
  * getPackages => guid, password
 
-**mysterybox/**
+``mysterybox/``
  * getBoxes => returns error
 
-**credits/**
+``credits/``
  * getoffers
  * pwpurchase
  * add
@@ -57,39 +57,39 @@ Please note that deca can add or remove links at any time, and have already remo
  * error
  * kabamadd => no longer exists
 
-**picture/**
+``picture/``
  * list
  * get
 
-**images/**
+``images/``
  * DecaLogoWhite.png
  * kabamLogo192x97.png
 
-**css/**
+``css/``
  * rotmg.common.css?__rotmg_cb=1424381358
 
-**js/**
+``js/``
  * rotmg.UrlLib.js
  * rotmg.Paymentwall.js
  * jquery-1.8.0.min.js
  * rotmg.Xsolla.js
 
-**admin/**
+``admin/``
  * => redirects to google app engine sign in
 
-**data/**
+``data/``
  * => prints a message saying you are forbidden to access this page
 
-**log/**
+``log/``
  * logFteStep => returns an error
 
-**server/**
+``server/``
  * => all of these urls are internal
  * list
  * add
  * remove
 
-**account/**
+``account/``
  * register => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
  * verify => guid, password (used by Muledump)
  * verifyage => guid, password
@@ -120,23 +120,23 @@ Please note that deca can add or remove links at any time, and have already remo
  * saveSecurityQuestions => guid, password
  * forgotpasswordPage => links to a page where you enter your email
 
-**supportCampaign/** (campaign is not active)
+``supportCampaign/`` (campaign is not active)
  * claim => guid, password
  * unlock => guid, password
  * donate => guid, password, amount
  * status => guid, password
  
-**fame/**
+``fame/``
  * list => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
 
-**dailyLogin/**
+``dailyLogin/``
  * fetchCalendar => guid, password
 
-**dailyquest/**
+``ailyquest/``
  Looks like a regular stub, but it may be dangerous for account
  * resetDailyQuests => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
 
-**char/**
+``char/``
  * list => guid, password
  * fame => accountId, charId
  * *purchase
@@ -147,10 +147,10 @@ Please note that deca can add or remove links at any time, and have already remo
  * purchaseClassUnlock
  * delete => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
 
-**inGameNews/**
+``inGameNews/``
  * &getNews
 
-**friends/**
+``friends/``
  * requestFriend => ignore, guid, targetName, password, &gameClientVersion
  * getList => ignore, guid, gameClientVersion, password
  * getRequests => ignore, guid, gameClientVersion, password
@@ -159,18 +159,18 @@ Please note that deca can add or remove links at any time, and have already remo
  * removeFriend => ignore, guid, targetName, gameClientVersion, password
  * blockRequest => ignore, guid, targetName, password, gameclientVersion
 
-**pet/**
+``pet/``
  * *feed
  * *fuse
 
-**news/**
+``news/``
  * => takes you to google sign in
 
-**arena/**
+``arena/``
  * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
  * getPersonalBest => guid, password
 
-**guild/**
+``guild/``
  * *changeRank
  * *removeMember
  * *create
@@ -178,39 +178,39 @@ Please note that deca can add or remove links at any time, and have already remo
  * setBoard => guid, password, board
  * listMembers => guid, password
 
-**kabam/**
+``kabam/``
  * getcredentials => userId
  * link
 
-**migrate/**
+``migrate/``
  * doMigration
  * progress => guid
  * userAccountReset
 
-**steamworks/**
+``steamworks/``
  * finalizePurchase
  * getcredentials => userId
  * purchaseOffer
  * register (disabled)
  * link (disabled)
 
-**kongregate/**
+``kongregate/``
  * getcredentials => userId
  * register => userId
  * link (disabled)
 
-**clientError/**
+``clientError/``
  * add
 
-**ugc/** (User Generated Content)
+``ugc/`` (User Generated Content)
  * save => name, description, thumbnail
 
-**sfx/**
+``sfx/``
  * => too many mp3 files to list (you can find these in pserver sources)
  
-**music/**
+``music/``
  * sorc.mp3 => main theme for realm
 
-**Unknown urls**
+``Unknown urls``
 
 Payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
