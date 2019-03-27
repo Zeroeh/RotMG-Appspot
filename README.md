@@ -119,95 +119,95 @@ Please note that deca can add or remove links at any time, and have already remo
  * ``forgotpasswordPage`` => links to a page where you enter your email
 
 ``supportCampaign/`` (campaign is not active)
- * claim => guid, password
- * unlock => guid, password
- * donate => guid, password, amount
- * status => guid, password
+ * ``claim`` => guid, password
+ * ``unlock`` => guid, password
+ * ``donate`` => guid, password, amount
+ * ``status`` => guid, password
  
 ``fame/``
- * list => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
+ * ``list`` => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
 
 ``dailyLogin/``
- * fetchCalendar => guid, password
+ * ``fetchCalendar`` => guid, password
 
 ``ailyquest/``
  Looks like a regular stub, but it may be dangerous for account
- * resetDailyQuests => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
+ * ``resetDailyQuests`` => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
 
 ``char/``
- * list => guid, password
- * fame => accountId, charId
- * *purchase
- * *get
- * *reskin
- * *create
- * *update
- * purchaseClassUnlock
- * delete => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
+ * ``list`` => guid, password
+ * ``fame`` => accountId, charId
+ * ``*purchase``
+ * ``*get``
+ * ``*reskin``
+ * ``*create``
+ * ``*update``
+ * ``purchaseClassUnlock``
+ * ``delete`` => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
 
 ``inGameNews/``
- * &getNews
+ * ``getNews``
 
 ``friends/``
- * requestFriend => ignore, guid, targetName, password, &gameClientVersion
- * getList => ignore, guid, gameClientVersion, password
- * getRequests => ignore, guid, gameClientVersion, password
- * acceptRequest => ignore, guid, targetName, gameClientVersion, password
- * rejectRequest => ignore, guid, targetName, gameClientVersion, password
- * removeFriend => ignore, guid, targetName, gameClientVersion, password
- * blockRequest => ignore, guid, targetName, password, gameclientVersion
+ * ``requestFriend`` => ignore, guid, targetName, password, &gameClientVersion
+ * ``getList`` => ignore, guid, gameClientVersion, password
+ * ``getRequests`` => ignore, guid, gameClientVersion, password
+ * ``acceptRequest`` => ignore, guid, targetName, gameClientVersion, password
+ * ``rejectRequest`` => ignore, guid, targetName, gameClientVersion, password
+ * ``removeFriend`` => ignore, guid, targetName, gameClientVersion, password
+ * ``blockRequest`` => ignore, guid, targetName, password, gameclientVersion
 
 ``pet/``
- * *feed
- * *fuse
+ * ``*feed``
+ * ``*fuse``
 
 ``news/``
  * => takes you to google sign in
 
 ``arena/``
- * getRecords => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
- * getPersonalBest => guid, password
+ * ``getRecords`` => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
+ * ``getPersonalBest`` => guid, password
 
 ``guild/``
- * *changeRank
- * *removeMember
- * *create
- * getBoard => guid, password
- * setBoard => guid, password, board
- * listMembers => guid, password
+ * ``*changeRank``
+ * ``*removeMember``
+ * ``*create``
+ * ``getBoard`` => guid, password
+ * ``setBoard`` => guid, password, board
+ * ``listMembers`` => guid, password
 
 ``kabam/``
- * getcredentials => userId
- * link
+ * ``getcredentials`` => userId
+ * ``link``
 
 ``migrate/``
- * doMigration
- * progress => guid
- * userAccountReset
+ * ``doMigration``
+ * ``progress`` => guid
+ * ``userAccountReset``
 
 ``steamworks/``
- * finalizePurchase
- * getcredentials => userId
- * purchaseOffer
- * register (disabled)
- * link (disabled)
+ * ``finalizePurchase``
+ * ``getcredentials`` => userId
+ * ``purchaseOffer``
+ * ``register`` (disabled)
+ * ``link`` (disabled)
 
 ``kongregate/``
- * getcredentials => userId
- * register => userId
- * link (disabled)
+ * ``getcredentials`` => userId
+ * ``register`` => userId
+ * ``link`` (disabled)
 
 ``clientError/``
- * add
+ * ``add``
 
 ``ugc/`` (User Generated Content)
- * save => name, description, thumbnail
+ * ``save`` => name, description, thumbnail
 
 ``sfx/``
  * => too many mp3 files to list (you can find these in pserver sources)
  
 ``music/``
- * sorc.mp3 => main theme for realm
+ * ``sorc.mp3`` => main theme for realm
 
 ``Unknown urls``
 
