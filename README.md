@@ -26,9 +26,9 @@ Please note that deca can add or remove links at any time, and have already remo
 - `languageType`: en
 
 **/**
- * $logowtext.png
- * $realmlogo.png
- * version.txt => time
+ * ``logowtext.png``
+ * ``realmlogo.png``
+ * ``version.txt`` => time
  * servers.txt
  * crossdomain.xml
  * draw.html
