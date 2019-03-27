@@ -132,7 +132,7 @@ Please note that deca can add or remove links at any time, and have already remo
 ``dailyLogin/``
  * ``fetchCalendar`` => guid, password
 
-``ailyquest/``
+``dailyquest/``
  Looks like a regular stub, but it may be dangerous for account
  * ``resetDailyQuests`` => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
 
