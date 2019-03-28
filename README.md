@@ -31,9 +31,9 @@ Please note that deca can add or remove links at any time, and have already remo
  * ``version.txt`` => time (unix time)
  * ``servers.txt``
  * ``crossdomain.xml``
- * ``draw.html``
- * ``TMloader{version}.swf``
- * ``TextureMaker{version}.swf``
+ * ``draw.html`` => Removed
+ * ``TMLoader{version}.swf`` => Removed
+ * ``TextureMaker{version}.swf`` => Removed
  * ``AGCloader.swf``
  * ``client``
  * ``AssembleeGameClient{version}.swf``
