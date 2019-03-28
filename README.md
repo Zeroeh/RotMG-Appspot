@@ -1,5 +1,6 @@
 If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Hey! Don't forget to check the new CONTRIBUTE.md guide**
 
+The main goal of this project is to document endpoints in the RotMG appspot API. All links, old or new, are posted here.
 
 ## Root URL
 - https://realmofthemadgodhrd.appspot.com
@@ -14,7 +15,7 @@ Directories marked with an asterisk (*) are internal server urls and will always
 
 Endpoints without any listed arguments could still take certain parameters, but they might not be listed here yet due to incompletedness.
 
-Please note that deca can add or remove links at any time, and have already removed a few links posted here.
+Please note that deca can add or remove links at any time.
 
 **Known URL parameters** (Sorted by key:value, or example value)
 - `game_net`:`rotmg`
