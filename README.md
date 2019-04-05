@@ -84,8 +84,7 @@ Please note that deca can add or remove links at any time.
 ``log/``
  * ``logFteStep`` => returns an error
 
-``server/``
- * => all of these urls are internal
+``server/`` => all of these urls are internal
  * ``list``
  * ``add``
  * ``remove``
