@@ -11,7 +11,7 @@ The main goal of this project is to document endpoints in the RotMG appspot API.
 - https://rotmgtesting.appspot.com (the current rotmg testing server)
 - https://realmtesting2.appspot.com ("hidden" testing server for private testers)
 
-Directories marked with an asterisk (*) are internal server urls and will always return ``\<Failure/\>``
+Directories marked with an asterisk (*) are internal server urls and will always return ``<Failure/>``
 
 Endpoints without any listed arguments could still take certain parameters, but they might not be listed here yet due to incompletedness.
 
