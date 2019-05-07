@@ -211,6 +211,6 @@ Please note that deca can add or remove links at any time.
 ``music/``
  * ``sorc.mp3`` => main theme for realm
 
-``Unknown urls``
+Unknown urls
 
 Payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
