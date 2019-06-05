@@ -11,6 +11,9 @@ The main goal of this project is to document endpoints in the RotMG appspot API.
 - https://rotmgtesting.appspot.com (the current rotmg testing server)
 - https://realmtesting2.appspot.com ("hidden" testing server for private testers)
 - https://test3.realmofthemadgod.com (Unknown)
+- https://rotmgtesting3.appspot.com
+- https://test.realmofthemadgod.com
+- https://testing.realmofthemadgod.com
 
 Directories marked with an asterisk (*) are internal server urls and will always return ``<Failure/>``
 
@@ -39,6 +42,8 @@ Please note that deca can add or remove links at any time.
  * ``AGCloader.swf``
  * ``client``
  * ``AssembleeGameClient{version}.swf``
+ * ``playerProductInstall.swf``
+ * ``UGDTermsofUse.html``
 
 ``app/``
  * ``globalNews``
