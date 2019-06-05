@@ -58,6 +58,7 @@ Please note that deca can add or remove links at any time.
  * ``done``
  * ``error``
  * ``kabamadd`` => no longer exists
+ * ``token``
 
 ``picture/`` => Seems to redirect to google login now
  * ``list``
@@ -100,7 +101,7 @@ Please note that deca can add or remove links at any time.
  * ``rp``
  * ``login``
  * ``setName`` => guid, password, name
- * ``validateEmail`` (removed)
+ * ``validateEmail`` (removed, changed to isEmailVerified)
  * ``supportVerify`` => guid, password, secret
  * ``*addStar``
  * ``*addIgnore``
@@ -120,6 +121,7 @@ Please note that deca can add or remove links at any time.
  * ``*claimLoginReward``
  * ``saveSecurityQuestions`` => guid, password
  * ``forgotpasswordPage`` => links to a page where you enter your email
+ * ``isEmailVerified``
 
 ``supportCampaign/`` (campaign is not active)
  * ``claim`` => guid, password
@@ -136,6 +138,7 @@ Please note that deca can add or remove links at any time.
 ``dailyquest/``
  Looks like a regular stub, but it may be dangerous for account
  * ``resetDailyQuests`` => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
+ * ``resetDailyQuestsAdmin``
 
 ``char/``
  * ``list`` => guid, password
@@ -182,6 +185,7 @@ Please note that deca can add or remove links at any time.
 ``kabam/``
  * ``getcredentials`` => userId
  * ``link``
+ * ``verify``
 
 ``migrate/``
  * ``doMigration``
@@ -199,6 +203,7 @@ Please note that deca can add or remove links at any time.
  * ``getcredentials`` => userId
  * ``register`` => userId
  * ``link`` (disabled)
+ * ``internalRegister``
 
 ``clientError/``
  * ``add``
