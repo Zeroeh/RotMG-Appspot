@@ -128,7 +128,7 @@ Please note that deca can add or remove links at any time.
  * ``forgotpasswordPage`` => links to a page where you enter your email
  * ``isEmailVerified``
 
-``supportCampaign/`` (campaign is not active)
+``supportCampaign/``
  * ``claim`` => guid, password
  * ``unlock`` => guid, password
  * ``donate`` => guid, password, amount
