@@ -90,6 +90,7 @@ Please note that deca can add or remove links at any time.
 
 ``log/``
  * ``logFteStep`` => returns an error
+ * ``logGameModePlayed`` => seasonID (Public Testing Season), gameMode (Legacy or Challenger), guid, password
 
 ``server/`` => all of these urls are internal
  * ``list``
@@ -127,6 +128,8 @@ Please note that deca can add or remove links at any time.
  * ``saveSecurityQuestions`` => guid, password
  * ``forgotpasswordPage`` => links to a page where you enter your email
  * ``isEmailVerified``
+ * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
+ * ````
 
 ``supportCampaign/``
  * ``claim`` => guid, password
@@ -136,9 +139,15 @@ Please note that deca can add or remove links at any time.
  
 ``fame/``
  * ``list`` => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
+ * ``challengerSeasonList`` => guid, password
+ * ``challengerLeaderboard`` => accountId, charId, timespan (same as fame/list)
+ * ``challengerAccountLeaderboard`` => accountId, charId, timespan (same as fame/list)
 
 ``dailyLogin/``
  * ``fetchCalendar`` => guid, password
+
+``season/``
+ * ``getSeasons`` => guid, password, gameClientVersion
 
 ``dailyquest/``
  Looks like a regular stub, but it may be dangerous for account
@@ -146,7 +155,7 @@ Please note that deca can add or remove links at any time.
  * ``resetDailyQuestsAdmin``
 
 ``char/``
- * ``list`` => guid, password
+ * ``list`` => guid, password, [challenger (false/true)][muleDump (true/false)]
  * ``fame`` => accountId, charId
  * ``*purchase``
  * ``*get``
