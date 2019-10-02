@@ -20,3 +20,12 @@ Finding subdirectories is quite fun, as it opens up a door to potentially a bunc
 I created some graphics that should demonstrate how easy it is to get started.
 The first image is the result of a subdirectory that does not exist.
 ![Screenshot](/pics/false.png)
+Subdirectories that do not exist should give out a "not found" error, but not a "404" error.
+
+The following image shows a subdirectory that exists. Notice the smaller font and the inclusion of "404".
+![Screenshot](/pics/true.png)
+If you find one of these that are not already listed in the README.md, please submit an issue with your discovery.
+
+This next image shows what happens when you forget to add the extra "/" at the end of the url.
+![Screenshot](/pics/badinput.png)
+If you forget to add the backslash you could potentially be wasting time or worse, may have even found a directory.
