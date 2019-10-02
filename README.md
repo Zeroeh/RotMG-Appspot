@@ -44,6 +44,7 @@ Please note that deca can add or remove links at any time.
  * ``AssembleeGameClient{version}.swf``
  * ``playerProductInstall.swf``
  * ``UGDTermsofUse.html``
+ * ``kongregate.html``
 
 ``app/``
  * ``globalNews``
@@ -51,23 +52,24 @@ Please note that deca can add or remove links at any time.
  * ``init``
 
 ``package/``
- * ``getPackages`` => guid, password
+ * ``getPackages`` => guid, password, language, version
 
 ``mysterybox/``
  * ``getBoxes`` => returns error
 
 ``credits/``
  * ``getoffers``
- * ``pwpurchase``
- * ``add``
+ * ``pwpurchase`` => iframeUrl (json with these params: token, production)
+ * ``add`` => tok, exp, guid, provider, jwt, price, paymentid
  * ``done``
  * ``error``
- * ``kabamadd`` => no longer exists
- * ``token``
+ * ``kabamadd`` => naid, signedRequest, createdat
+ * ``token`` => guid, password
 
 ``picture/`` => Seems to redirect to google login now
  * ``list``
- * ``get``
+ * ``get`` => id, time
+ * ``save``
 
 ``images/``
  * ``DecaLogoWhite.png``
@@ -127,7 +129,8 @@ Please note that deca can add or remove links at any time.
  * ``*claimLoginReward``
  * ``saveSecurityQuestions`` => guid, password
  * ``forgotpasswordPage`` => links to a page where you enter your email
- * ``isEmailVerified``
+ * ``isEmailVerified`` => guid, password
+ * ``changeEmail`` => guid, password, newGuid
  * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
 
 ``supportCampaign/``
@@ -151,7 +154,7 @@ Please note that deca can add or remove links at any time.
 ``dailyquest/``
  Looks like a regular stub, but it may be dangerous for account
  * ``resetDailyQuests`` => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
- * ``resetDailyQuestsAdmin``
+ * ``resetDailyQuestsAdmin`` => guid, password
 
 ``char/``
  * ``list`` => guid, password, [challenger (false/true)][muleDump (true/false)]
@@ -196,9 +199,9 @@ Please note that deca can add or remove links at any time.
  * ``listMembers`` => guid, password
 
 ``kabam/``
- * ``getcredentials`` => userId
+ * ``getcredentials`` => userId, signedRequest, entrytag
  * ``link``
- * ``verify``
+ * ``verify`` => kabamemail, kabampassword
 
 ``migrate/``
  * ``doMigration``
@@ -206,7 +209,7 @@ Please note that deca can add or remove links at any time.
  * ``userAccountReset``
 
 ``steamworks/``
- * ``finalizePurchase``
+ * ``finalizePurchase`` => appid, orderid, authorized (1 or 0)
  * ``getcredentials`` => userId
  * ``purchaseOffer``
  * ``register`` (disabled)
@@ -216,10 +219,10 @@ Please note that deca can add or remove links at any time.
  * ``getcredentials`` => userId
  * ``register`` => userId
  * ``link`` (disabled)
- * ``internalRegister``
+ * ``internalRegister`` => userId, username, gameAuthToken, guid
 
 ``clientError/``
- * ``add``
+ * ``add`` => text, guid
 
 ``ugc/`` (User Generated Content)
  * ``save`` => name, description, thumbnail
