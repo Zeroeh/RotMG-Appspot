@@ -127,7 +127,7 @@ Please note that deca can add or remove links at any time.
  * ``*ban``
  * ``v`` => a, action, g-recaptcha-response
  * ``*claimLoginReward``
- * ``saveSecurityQuestions`` => guid, password, answers (string encoded in base64 and contains three answers splitted by |)
+ * ``saveSecurityQuestions`` => guid, password, answers (encoded in base64 and split by a pipe operator [|])
  * ``forgotpasswordPage`` => links to a page where you enter your email
  * ``isEmailVerified`` => guid, password
  * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
