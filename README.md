@@ -1,6 +1,6 @@
-If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Hey! Don't forget to check the new CONTRIBUTE.md guide**
+If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Feel like helping? Don't forget to check the new CONTRIBUTE.md guide**
 
-The main goal of this project is to document endpoints in the RotMG appspot API. All links (at least the ones we can find), old or new, are posted here.
+The main goal of this project is to document endpoints in the RotMG appspot API. All links (at least the ones we can find / have access to), old or new, are posted here.
 
 ## Root URL
 - https://realmofthemadgodhrd.appspot.com
@@ -55,7 +55,7 @@ Please note that deca can add or remove links at any time.
  * ``getPackages`` => guid, password, language, version
 
 ``mysterybox/``
- * ``getBoxes`` => returns error
+ * ``getBoxes`` => guid, password, version (seems to accept any float like 1.0)
 
 ``credits/``
  * ``getoffers``
@@ -91,7 +91,7 @@ Please note that deca can add or remove links at any time.
  * => prints a message saying you are forbidden to access this page
 
 ``log/``
- * ``logFteStep`` => returns an error
+ * ``logFteStep`` => game_net_user_id, game_net, play_platform, guid, password, fteStepCompleted (used for tracking tutorial progress, returns an error)
  * ``logGameModePlayed`` => seasonID (Public Testing Season), gameMode (Legacy or Challenger), guid, password
 
 ``server/`` => all of these urls are internal
@@ -100,12 +100,12 @@ Please note that deca can add or remove links at any time.
  * ``remove``
 
 ``account/``
- * ``register`` => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore
+ * ``register`` => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore, signedUpKabamEmail (0 or 1)
  * ``verify`` => guid, password (used by Muledump)
  * ``verifyage`` => guid, password
  * ``acceptTOS`` => guid, password
- * ``changeEmail``
- * ``playFortuneGame`` => id (likely)
+ * ``changeEmail`` => guid, password, newGuid
+ * ``playFortuneGame`` => choice, status, currency (2 for fortune tokens or 0 for gold)
  * ``rp``
  * ``login``
  * ``setName`` => guid, password, name
@@ -115,11 +115,11 @@ Please note that deca can add or remove links at any time.
  * ``*addIgnore``
  * ``purchaseCharSlot`` => guid, password
  * ``*purchaseVaultChest``
- * ``purchaseSkin`` => guid, password, (skin?)
- * ``purchaseMysteryBox`` => guid, password, id
- * ``purchasePackage`` => guid, password, id
+ * ``purchaseSkin`` => guid, password, skinType
+ * ``purchaseMysteryBox`` => guid, password, boxId, quantity, price, currency
+ * ``purchasePackage`` => guid, password, boxId, quantity, price, currency
  * ``getOwnedPetSkins`` => guid, password
- * ``getBeginnerPackageTimeLeft`` (removed)
+ * ``getBeginnerPackageTimeLeft`` => guid, password (removed)
  * ``sendVerifyEmail`` => guid, password
  * ``forgotPassword`` => guid
  * ``changePassword`` => newPassword, &ignore, guid, password, &gameClientVersion
@@ -127,10 +127,9 @@ Please note that deca can add or remove links at any time.
  * ``*ban``
  * ``v`` => a, action, g-recaptcha-response
  * ``*claimLoginReward``
- * ``saveSecurityQuestions`` => guid, password
+ * ``saveSecurityQuestions`` => guid, password, answers (string encoded in base64 and contains three answers splitted by |)
  * ``forgotpasswordPage`` => links to a page where you enter your email
  * ``isEmailVerified`` => guid, password
- * ``changeEmail`` => guid, password, newGuid
  * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
 
 ``supportCampaign/``
@@ -138,6 +137,7 @@ Please note that deca can add or remove links at any time.
  * ``unlock`` => guid, password
  * ``donate`` => guid, password, amount
  * ``status`` => guid, password
+ * ``create``
  
 ``fame/``
  * ``list`` => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
@@ -164,7 +164,7 @@ Please note that deca can add or remove links at any time.
  * ``*reskin``
  * ``*create``
  * ``*update``
- * ``purchaseClassUnlock``
+ * ``purchaseClassUnlock`` => guid, password, game_net_user_id, game_net, play_platform, do_login, classType
  * ``delete`` => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
 
 ``inGameNews/``
@@ -196,28 +196,29 @@ Please note that deca can add or remove links at any time.
  * ``*create``
  * ``getBoard`` => guid, password
  * ``setBoard`` => guid, password, board
- * ``listMembers`` => guid, password
+ * ``listMembers`` => guid, password, num, offset
+ * ``*purchase``
 
 ``kabam/``
  * ``getcredentials`` => userId, signedRequest, entrytag
- * ``link``
+ * ``link`` => kabamemail, kabampassword, email, password
  * ``verify`` => kabamemail, kabampassword
 
 ``migrate/``
- * ``doMigration``
+ * ``doMigration`` => guid, password
  * ``progress`` => guid
- * ``userAccountReset``
+ * ``userAccountReset`` => guid, password
 
 ``steamworks/``
  * ``finalizePurchase`` => appid, orderid, authorized (1 or 0)
  * ``getcredentials`` => userId
- * ``purchaseOffer``
- * ``register`` (disabled)
+ * ``purchaseOffer`` => steamid, data
+ * ``register`` => newGUID, newPassword, entrytag (disabled)
  * ``link`` (disabled)
 
 ``kongregate/``
  * ``getcredentials`` => userId
- * ``register`` => userId
+ * ``register`` => userId, username, gameAuthToken, newGUID, newPassword, entrytag
  * ``link`` (disabled)
  * ``internalRegister`` => userId, username, gameAuthToken, guid
 
@@ -225,10 +226,12 @@ Please note that deca can add or remove links at any time.
  * ``add`` => text, guid
 
 ``ugc/`` (User Generated Content)
- * ``save`` => name, description, thumbnail
+ * ``save`` => guid, password, name, description, width, height, mapjm, tags, totalObjects, totalTiles, thumbnail, overwrite (on or off) (seems to always return <Error>Invalid permissions</Error>)
+ * ``get``
 
 ``sfx/``
  * => too many mp3 files to list (you can find these in pserver sources)
+ * See: https://realmofthemadgod.fandom.com/wiki/Sounds
  
 ``music/``
  * ``sorc.mp3`` => main theme for realm
