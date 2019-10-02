@@ -12,5 +12,9 @@
 May take some time but is very useful
 -  Open `README.md` file, take root url, paste it in new browser window
 -  Add sections like `friends` or `arena` to URL
--  Add needed parametrs and go to this URL
+-  Add needed parameters and go to this URL
 -  If you see an error about missing parameters, message about removed link or something not mentioned in `README.md`  open an issue or create Pull Request
+
+### Finding new subdirectories
+todo
+
