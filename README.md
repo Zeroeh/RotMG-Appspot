@@ -129,7 +129,6 @@ Please note that deca can add or remove links at any time.
  * ``forgotpasswordPage`` => links to a page where you enter your email
  * ``isEmailVerified``
  * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
- * ````
 
 ``supportCampaign/``
  * ``claim`` => guid, password
