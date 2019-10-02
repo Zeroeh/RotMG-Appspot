@@ -16,5 +16,7 @@ May take some time but is very useful
 -  If you see an error about missing parameters, message about removed link or something not mentioned in `README.md`  open an issue or create Pull Request
 
 ### Finding new subdirectories
-todo
-
+Finding subdirectories is quite fun, as it opens up a door to potentially a bunch of new urls. It's recommended to use some sort of web crawler or name generator rather than finding these by hand, but if you're smart and know the game topology, finding them by hand can be just as effective.
+I created some graphics that should demonstrate how easy it is to get started.
+The first image is the result of a subdirectory that does not exist.
+![Screenshot](/pics/false.png)
