@@ -37,6 +37,7 @@ Please note that deca can add or remove links at any time.
  * ``servers.txt``
  * ``crossdomain.xml``
  * ``draw.html`` => Removed
+ * ``draw/html``
  * ``TMLoader{version}.swf`` => Removed
  * ``TextureMaker{version}.swf`` => Removed
  * ``AGCloader.swf``
@@ -45,6 +46,8 @@ Please note that deca can add or remove links at any time.
  * ``playerProductInstall.swf``
  * ``UGDTermsofUse.html``
  * ``kongregate.html``
+ * ``xd.html``
+ * ``PrivacyPolicy.html``
 
 ``app/``
  * ``globalNews``
@@ -67,9 +70,10 @@ Please note that deca can add or remove links at any time.
  * ``token`` => guid, password
 
 ``picture/`` => Seems to redirect to google login now
- * ``list``
+ * ``list`` => myGUID, guid, dataType, tags, offset, num
  * ``get`` => id, time
  * ``save``
+ * ``delete`` => id, guid, password
 
 ``images/``
  * ``DecaLogoWhite.png``
