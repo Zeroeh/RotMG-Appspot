@@ -239,6 +239,12 @@ Please note that deca can add or remove links at any time.
  
 ``music/``
  * ``sorc.mp3`` => main theme for realm
+ 
+``build/``
+
+``survey/``
+
+``events/``
 
 ## Unknown urls
 
