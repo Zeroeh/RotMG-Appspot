@@ -48,6 +48,7 @@ Please note that deca can add or remove links at any time.
  * ``kongregate.html``
  * ``xd.html``
  * ``PrivacyPolicy.html``
+ * ``kabam.html``
 
 ``app/``
  * ``globalNews``
@@ -66,7 +67,7 @@ Please note that deca can add or remove links at any time.
  * ``add`` => tok, exp, guid, provider, jwt, price, paymentid
  * ``done``
  * ``error``
- * ``kabamadd`` => naid, signedRequest, createdat
+ * ``kabamadd`` => naid, signedRequest, createdat (removed)
  * ``token`` => guid, password
 
 ``picture/`` => Seems to redirect to google login now
@@ -245,6 +246,8 @@ Please note that deca can add or remove links at any time.
 ``survey/``
 
 ``events/``
+
+``platforms/``
 
 ## Unknown urls
 
