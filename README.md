@@ -220,12 +220,14 @@ Please note that deca can add or remove links at any time.
  * ``purchaseOffer`` => steamid, data
  * ``register`` => newGUID, newPassword, entrytag (disabled)
  * ``link`` (disabled)
+ * ``getoffers``
 
 ``kongregate/``
  * ``getcredentials`` => userId
  * ``register`` => userId, username, gameAuthToken, newGUID, newPassword, entrytag
  * ``link`` (disabled)
  * ``internalRegister`` => userId, username, gameAuthToken, guid
+ * ``getoffers``
 
 ``clientError/``
  * ``add`` => text, guid
@@ -245,6 +247,7 @@ Please note that deca can add or remove links at any time.
 
 ``survey/``
  * ``add`` => Returns 500 error
+ * ``*delete``
 
 ``events/``
 
