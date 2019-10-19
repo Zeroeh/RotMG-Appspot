@@ -244,6 +244,7 @@ Please note that deca can add or remove links at any time.
 ``build/``
 
 ``survey/``
+ * ``add`` => Returns 500 error
 
 ``events/``
 
