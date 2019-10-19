@@ -252,6 +252,7 @@ Please note that deca can add or remove links at any time.
 ``events/``
 
 ``platforms/``
+ * ``kabam`` => Error 405. Method GET not allowed.
 
 ## Unknown urls
 
