@@ -254,6 +254,12 @@ Please note that deca can add or remove links at any time.
 ``platforms/``
  * ``kabam`` => Error 405. Method GET not allowed.
 
+``cronJob/`` => Takes you to google sign in
+
+``eventlog/`` => Access is forbidden
+
+``hotkeyz/`` => Access is forbidden
+
 ## Unknown urls
 
 Payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
