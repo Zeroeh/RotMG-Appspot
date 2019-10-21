@@ -1,4 +1,4 @@
-If you have any contributions (new urls, previously unknown parameters, ect), feel free to submit an issue or pull request and I will be sure to credit you. **Feel like helping? Don't forget to check the new CONTRIBUTE.md guide**
+If you have any contributions (new urls, previously unknown parameters, etc.), feel free to submit an issue or pull request and I will be sure to credit you. **Feel like helping? Don't forget to check the CONTRIBUTE.md guide**
 
 The main goal of this project is to document endpoints in the RotMG appspot API. All links (at least the ones we can find / have access to), old or new, are posted here.
 
@@ -10,7 +10,7 @@ The main goal of this project is to document endpoints in the RotMG appspot API.
 - https://rotmghrdtesting.appspot.com (old kabam test server used for account migration testing)
 - https://rotmgtesting.appspot.com (the current rotmg testing server)
 - https://realmtesting2.appspot.com ("hidden" testing server for private testers)
-- https://test3.realmofthemadgod.com (Unknown)
+- https://test3.realmofthemadgod.com
 - https://rotmgtesting3.appspot.com
 - https://test.realmofthemadgod.com
 - https://testing.realmofthemadgod.com
@@ -19,7 +19,7 @@ Directories marked with an asterisk (*) are internal server urls and will always
 
 Endpoints without any listed arguments could still take certain parameters, but they might not be listed here yet due to incompletedness.
 
-Please note that deca can add or remove links at any time.
+Please note that DECA can add or remove links at any time.
 
 **Known URL parameters** (Sorted by key:value, or example value)
 - `game_net`:`rotmg`
@@ -36,10 +36,10 @@ Please note that deca can add or remove links at any time.
  * ``version.txt`` => time (unix time)
  * ``servers.txt``
  * ``crossdomain.xml``
- * ``draw.html`` => Removed
+ * ``draw.html``
  * ``draw/html``
- * ``TMLoader{version}.swf`` => Removed
- * ``TextureMaker{version}.swf`` => Removed
+ * ``TMLoader{version}.swf``
+ * ``TextureMaker{version}.swf``
  * ``AGCloader.swf``
  * ``client``
  * ``AssembleeGameClient{version}.swf``
@@ -89,8 +89,7 @@ Please note that deca can add or remove links at any time.
  * ``jquery-1.8.0.min.js``
  * ``rotmg.Xsolla.js``
 
-``admin/``
- * => redirects to google app engine sign in
+``admin/`` => Takes you to google sign in
 
 ``data/``
  * => prints a message saying you are forbidden to access this page
@@ -127,7 +126,7 @@ Please note that deca can add or remove links at any time.
  * ``getBeginnerPackageTimeLeft`` => guid, password (removed)
  * ``sendVerifyEmail`` => guid, password
  * ``forgotPassword`` => guid
- * ``changePassword`` => newPassword, &ignore, guid, password, &gameClientVersion
+ * ``changePassword`` => newPassword, guid, password
  * ``getCredits`` => guid, password
  * ``*ban``
  * ``v`` => a, action, g-recaptcha-response
@@ -145,7 +144,7 @@ Please note that deca can add or remove links at any time.
  * ``create``
  
 ``fame/``
- * ``list`` => timespan(week, month, all), &ignore, &charId, &gameClientVersion, &accountId
+ * ``list`` => timespan(week, month, all), &charId, &accountId
  * ``challengerSeasonList`` => guid, password
  * ``challengerLeaderboard`` => accountId, charId, timespan (same as fame/list)
  * ``challengerAccountLeaderboard`` => accountId, charId, timespan (same as fame/list)
@@ -157,9 +156,8 @@ Please note that deca can add or remove links at any time.
  * ``getSeasons`` => guid, password, gameClientVersion
 
 ``dailyquest/``
- Looks like a regular stub, but it may be dangerous for account
- * ``resetDailyQuests`` => guid, password (returns this error: This feature is disabled. Your attempt of using it was noted)
- * ``resetDailyQuestsAdmin`` => guid, password
+ * ``resetDailyQuests`` => guid, password (returns <Error>Server error<Error/>)
+ * ``resetDailyQuestsAdmin`` => guid, password (requires admin account)
 
 ``char/``
  * ``list`` => guid, password, [challenger (false/true)][muleDump (true/false)]
@@ -176,7 +174,7 @@ Please note that deca can add or remove links at any time.
  * ``getNews``
 
 ``friends/``
- * ``requestFriend`` => ignore, guid, targetName, password, &gameClientVersion
+ * ``requestFriend`` => ignore, guid, targetName, password
  * ``getList`` => ignore, guid, gameClientVersion, password
  * ``getRequests`` => ignore, guid, gameClientVersion, password
  * ``acceptRequest`` => ignore, guid, targetName, gameClientVersion, password
@@ -188,11 +186,10 @@ Please note that deca can add or remove links at any time.
  * ``*feed``
  * ``*fuse``
 
-``news/``
- * => takes you to google sign in
+``news/`` => Takes you to google sign in
 
 ``arena/``
- * ``getRecords`` => ignore, type(weekly, personal, alltime), guid, password, gameClientVersion
+ * ``getRecords`` => type(weekly, personal, alltime), guid, password
  * ``getPersonalBest`` => guid, password
 
 ``guild/``
@@ -223,7 +220,7 @@ Please note that deca can add or remove links at any time.
  * ``getoffers``
 
 ``kongregate/``
- * ``getcredentials`` => userId
+ * ``getcredentials`` => userId, gameAuthToken
  * ``register`` => userId, username, gameAuthToken, newGUID, newPassword, entrytag
  * ``link`` (disabled)
  * ``internalRegister`` => userId, username, gameAuthToken, guid
@@ -241,7 +238,7 @@ Please note that deca can add or remove links at any time.
  * See: https://realmofthemadgod.fandom.com/wiki/Sounds
  
 ``music/``
- * ``sorc.mp3`` => main theme for realm
+ * ``sorc.mp3`` => main theme for RotMG
  
 ``build/``
 
