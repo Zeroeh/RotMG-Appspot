@@ -37,13 +37,13 @@ If you forget to add the backslash you could potentially be wasting time or wors
 The URL Fuzzer can be used to find hidden files and directories on a web server by fuzzing.
 This is a discovery activity which allows you to discover resources that were not meant to be publicly accessible (ex. /backups, /index.php.old, /archive.tgz, /source_code.zip, etc). We are going to use URL fuzzing for finding new subdirectories.
 
-Firstly you need to download a fuzzer. I will be using [ffuf](https://github.com/ffuf/ffuf) as it is powerful and fast. After you downloaded it from [Releases](https://github.com/ffuf/ffuf/releases) you are ready to start. his is the command we are going to use for fuzzing:
+Firstly you need to download a fuzzer. I will be using [ffuf](https://github.com/ffuf/ffuf) as it is powerful and fast. After you downloaded it from [Releases](https://github.com/ffuf/ffuf/releases) you are ready to start. Here is the command we are going to use for fuzzing:
 ```sh
 ffuf -c -u https://realmofthemadgodhrd.appspot.com/FUZZ/ -w wordlist.txt
 ```
 You should enter path to your wordlist after the `-w` keyword (you may find them [here](https://github.com/search?q=wordlist+fuzzing))
 
-That's it! No more configuration is required. Now you should just relax and wait when the fuzzer finishes its work. After that you should see if there were any results and if there are, check if they are not already listed here. If you find something new open an issue or create Pull Request.
+That's it! No more configuration is required. Now you should just sit back and relax. When the results will be ready you should see if they wasn't already listed here. If you find something new open an issue or create Pull Request.
 
 Also if you want to catch another response codes like Forbidden (though they are mostly useless), you should use this command:
 ```sh
