@@ -223,7 +223,7 @@ Please note that deca can add or remove links at any time.
  * ``getoffers``
 
 ``kongregate/``
- * ``getcredentials`` => userId
+ * ``getcredentials`` => userId, gameAuthToken
  * ``register`` => userId, username, gameAuthToken, newGUID, newPassword, entrytag
  * ``link`` (disabled)
  * ``internalRegister`` => userId, username, gameAuthToken, guid
