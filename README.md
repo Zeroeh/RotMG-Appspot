@@ -257,6 +257,10 @@ Please note that DECA can add or remove links at any time.
 
 ``hotkeyz/`` => Access is forbidden
 
+``topz/`` => Access is forbidden
+
+``rpcz/`` => Access is forbidden
+
 ## Unknown urls
 
 Payment url: http://www.realmofthemadgod.com/?user_id=email&status=done&invoice_id=111111111
