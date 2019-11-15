@@ -185,6 +185,8 @@ Please note that DECA can add or remove links at any time.
 ``pet/``
  * ``*feed``
  * ``*fuse``
+ * ``*createPet``
+ * ``*yardupgrade``
 
 ``news/`` => Takes you to google sign in
 
