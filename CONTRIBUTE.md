@@ -39,13 +39,8 @@ This is a discovery activity which allows you to discover resources that were no
 
 Firstly you need to download a fuzzer. I will be using [ffuf](https://github.com/ffuf/ffuf) as it is powerful and fast. After you downloaded it from [Releases](https://github.com/ffuf/ffuf/releases) you are ready to start. Here is the command we are going to use for fuzzing:
 ```sh
-ffuf -c -u https://realmofthemadgodhrd.appspot.com/FUZZ/ -w wordlist.txt
+ffuf.exe -u https://realmofthemadgodhrd.appspot.com/FUZZ/ -mr "The resource could not be found." -w wordlist.txt
 ```
 You should enter path to your wordlist after the `-w` keyword (you may find them [here](https://github.com/search?q=wordlist+fuzzing))
 
 That's it! No more configuration is required. Now you should just sit back and relax. When the results will be ready you should see if they wasn't already listed here. If you find something new open an issue or create Pull Request.
-
-Also if you want to catch another response codes like Forbidden (though they are mostly useless), you should use this command:
-```sh
-ffuf -c -u https://realmofthemadgodhrd.appspot.com/FUZZ/ -mc 100,101,102,200,201,202,203,204,205,206,207,208,226,300,301,302,302,303,304,305,306,307,308,400,401,402,403,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,421,422,423,424,426,428,429,431,449,451,452,499,500,501,502,503,504,505,506,507,508,509,510,511,520,521,522,523,524,525,526 -w wordlist.txt
-```
