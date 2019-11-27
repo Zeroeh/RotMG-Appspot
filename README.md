@@ -135,6 +135,7 @@ Please note that DECA can add or remove links at any time.
  * ``forgotpasswordPage`` => links to a page where you enter your email
  * ``isEmailVerified`` => guid, password
  * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
+ * ``spammer`` => Returns internal error
 
 ``supportCampaign/``
  * ``claim`` => guid, password
@@ -142,6 +143,7 @@ Please note that DECA can add or remove links at any time.
  * ``donate`` => guid, password, amount
  * ``status`` => guid, password
  * ``create``
+ * ``getinfo``
  
 ``fame/``
  * ``list`` => timespan(week, month, all), &charId, &accountId
@@ -227,6 +229,7 @@ Please note that DECA can add or remove links at any time.
  * ``link`` (disabled)
  * ``internalRegister`` => userId, username, gameAuthToken, guid
  * ``getoffers``
+ * ``callback`` 
 
 ``clientError/``
  * ``add`` => text, guid
