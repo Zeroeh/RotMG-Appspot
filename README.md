@@ -50,6 +50,9 @@ Please note that DECA can add or remove links at any time.
  * ``PrivacyPolicy.html``
  * ``kabam.html``
  * ``app.yaml``
+ * ``index.yaml``
+ * ``dispatch.yaml``
+ * ``cron.yaml``
 
 ``app/``
  * ``globalNews``
