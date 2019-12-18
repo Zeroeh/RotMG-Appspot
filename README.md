@@ -49,6 +49,7 @@ Please note that DECA can add or remove links at any time.
  * ``xd.html``
  * ``PrivacyPolicy.html``
  * ``kabam.html``
+ * ``app.yaml``
 
 ``app/``
  * ``globalNews``
