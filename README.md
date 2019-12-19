@@ -53,6 +53,8 @@ Please note that DECA can add or remove links at any time.
  * ``index.yaml``
  * ``dispatch.yaml``
  * ``cron.yaml``
+ * ``dos.yaml``
+ * ``queue.yaml``
 
 ``app/``
  * ``globalNews``
