@@ -242,7 +242,7 @@ Please note that DECA can add or remove links at any time.
 
 ``ugc/`` (User Generated Content)
  * ``save`` => guid, password, name, description, width, height, mapjm, tags, totalObjects, totalTiles, thumbnail, overwrite (on or off) (seems to always return <Error>Invalid permissions</Error>)
- * ``get``
+ * ``*get``
 
 ``sfx/``
  * => too many mp3 files to list (you can find these in pserver sources)
