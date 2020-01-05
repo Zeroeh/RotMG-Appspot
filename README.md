@@ -94,6 +94,10 @@ Please note that DECA can add or remove links at any time.
  * ``rotmg.Paymentwall.js``
  * ``jquery-1.8.0.min.js``
  * ``rotmg.Xsolla.js``
+ * ``AC_OETags.js``
+ * ``rotmg.Paymentwall.js``
+ * ``rotmg.SalesForce.js``
+ * ``rotmg.Client.js``
 
 ``admin/`` => Takes you to google sign in
 
