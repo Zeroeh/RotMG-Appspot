@@ -68,7 +68,7 @@ Please note that DECA can add or remove links at any time.
  * ``getBoxes`` => guid, password, version (seems to accept any float like 1.0)
 
 ``credits/``
- * ``getoffers``
+ * ``getoffers`` => guid, password
  * ``pwpurchase`` => iframeUrl (json with these params: token, production)
  * ``add`` => tok, exp, guid, provider, jwt, price, paymentid
  * ``done``
@@ -114,7 +114,7 @@ Please note that DECA can add or remove links at any time.
  * ``remove``
 
 ``account/``
- * ``register`` => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore, signedUpKabamEmail (0 or 1)
+ * ``register`` => newPassword, entrytag, newGUID, name(not needed), isAgeVerified, guid, ignore, signedUpKabamEmail (0 or 1)
  * ``verify`` => guid, password (used by Muledump)
  * ``verifyage`` => guid, password
  * ``acceptTOS`` => guid, password
@@ -139,7 +139,7 @@ Please note that DECA can add or remove links at any time.
  * ``changePassword`` => newPassword, guid, password
  * ``getCredits`` => guid, password
  * ``*ban``
- * ``v`` => a, action, g-recaptcha-response
+ * ``v`` => a, b(Getting the captcha); a, action, g-recaptcha-response(Submitting the captcha)
  * ``*claimLoginReward``
  * ``saveSecurityQuestions`` => guid, password, answers (encoded in base64 and split by a pipe operator [|])
  * ``forgotpasswordPage`` => links to a page where you enter your email
