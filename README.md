@@ -68,7 +68,7 @@ Please note that DECA can add or remove links at any time.
  * ``getBoxes`` => guid, password, version (seems to accept any float like 1.0)
 
 ``credits/``
- * ``getoffers``
+ * ``getoffers`` => guid, password
  * ``pwpurchase`` => iframeUrl (json with these params: token, production)
  * ``add`` => tok, exp, guid, provider, jwt, price, paymentid
  * ``done``
