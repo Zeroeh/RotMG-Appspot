@@ -139,7 +139,7 @@ Please note that DECA can add or remove links at any time.
  * ``changePassword`` => newPassword, guid, password
  * ``getCredits`` => guid, password
  * ``*ban``
- * ``v`` => a, action, g-recaptcha-response
+ * ``v`` => a, b(Getting the captcha); a, action, g-recaptcha-response(Submitting the captcha)
  * ``*claimLoginReward``
  * ``saveSecurityQuestions`` => guid, password, answers (encoded in base64 and split by a pipe operator [|])
  * ``forgotpasswordPage`` => links to a page where you enter your email
