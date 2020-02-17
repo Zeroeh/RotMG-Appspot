@@ -114,7 +114,7 @@ Please note that DECA can add or remove links at any time.
  * ``remove``
 
 ``account/``
- * ``register`` => newPassword, entrytag, newGUID, isAgeVerified, guid, ignore, signedUpKabamEmail (0 or 1)
+ * ``register`` => newPassword, entrytag, newGUID, name(not needed), isAgeVerified, guid, ignore, signedUpKabamEmail (0 or 1)
  * ``verify`` => guid, password (used by Muledump)
  * ``verifyage`` => guid, password
  * ``acceptTOS`` => guid, password
