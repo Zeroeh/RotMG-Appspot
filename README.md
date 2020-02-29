@@ -15,9 +15,10 @@ The main goal of this project is to document endpoints in the RotMG appspot API.
 - https://rotmghrdtesting.appspot.com (old kabam test server used for account migration testing)
 - https://rotmgtesting.appspot.com (the current rotmg testing server)
 - https://realmtesting2.appspot.com ("hidden" testing server for private testers)
+- https://test.realmofthemadgod.com
+- https://test2.realmofthemadgod.com
 - https://test3.realmofthemadgod.com
 - https://rotmgtesting3.appspot.com
-- https://test.realmofthemadgod.com
 - https://testing.realmofthemadgod.com
 
 Directories marked with an asterisk (*) are internal server urls and will always return ``<Failure/>``
