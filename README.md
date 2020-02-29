@@ -6,6 +6,11 @@ The main goal of this project is to document endpoints in the RotMG appspot API.
 - https://realmofthemadgodhrd.appspot.com
 - https://realmofthemadgod.appspot.com (used before kabam account migration)
 
+## Subdomains
+- [http://play.realmofthemadgod.com](https://web.archive.org/web/20160630000841/http://play.realmofthemadgod.com/) (used by kabam till 2016 for unknown purpose)
+- http://remaster.realmofthemadgod.com
+- http://unity.realmofthemadgod.com
+
 ## Testing Links
 - https://rotmghrdtesting.appspot.com (old kabam test server used for account migration testing)
 - https://rotmgtesting.appspot.com (the current rotmg testing server)
