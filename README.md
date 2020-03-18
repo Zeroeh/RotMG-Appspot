@@ -273,9 +273,6 @@ Please note that DECA can add or remove links at any time.
 
 ``platforms/``
  * ``kabam`` => Error 405. Method GET not allowed.
- 
- ``exalt/``
- 
 
 ``cronJob/`` => Takes you to google sign in
 
