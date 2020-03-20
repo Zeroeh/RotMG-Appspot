@@ -46,7 +46,7 @@ Please note that DECA can add or remove links at any time.
  * ``draw/html``
  * ``TMLoader{version}.swf``
  * ``TextureMaker{version}.swf``
- * ``AGCloader.swf``
+ * ``AGCloader{version}.swf``
  * ``client``
  * ``AssembleeGameClient{version}.swf``
  * ``playerProductInstall.swf``
@@ -64,11 +64,11 @@ Please note that DECA can add or remove links at any time.
 
 ``app/``
  * ``globalNews``
- * ``getLanguageStrings`` => gameClientVersion, languageType
+ * ``getLanguageStrings`` => languageType (en)
  * ``init``
 
 ``package/``
- * ``getPackages`` => guid, password, language, version
+ * ``getPackages`` => guid, password, version (seems to accept any float like 1.0)
 
 ``mysterybox/``
  * ``getBoxes`` => guid, password, version (seems to accept any float like 1.0)
@@ -93,7 +93,7 @@ Please note that DECA can add or remove links at any time.
  * ``kabamLogo192x97.png``
 
 ``css/``
- * ``rotmg.common.css?__rotmg_cb=1424381358``
+ * ``rotmg.common.css``
 
 ``js/``
  * ``rotmg.UrlLib.js``
@@ -111,8 +111,8 @@ Please note that DECA can add or remove links at any time.
  * => prints a message saying you are forbidden to access this page
 
 ``log/``
- * ``logFteStep`` => game_net_user_id, game_net, play_platform, guid, password, fteStepCompleted (used for tracking tutorial progress, returns an error)
- * ``logGameModePlayed`` => seasonID (Public Testing Season), gameMode (Legacy or Challenger), guid, password
+ * ``logFteStep`` => game_net_user_id, game_net, play_platform, guid, password, fteStepCompleted (used for tracking tutorial progress, removed)
+ * ``logGameModePlayed`` => seasonID, gameMode (Legacy or Challenger), guid, password
 
 ``server/`` => all of these urls are internal
  * ``list``
@@ -120,7 +120,7 @@ Please note that DECA can add or remove links at any time.
  * ``remove``
 
 ``account/``
- * ``register`` => newPassword, entrytag, newGUID, name(not needed), isAgeVerified, guid, ignore, signedUpKabamEmail (0 or 1)
+ * ``register`` => newPassword, entrytag, newGUID, name(not needed), isAgeVerified, guid, signedUpKabamEmail (0 or 1)
  * ``verify`` => guid, password (used by Muledump)
  * ``verifyage`` => guid, password
  * ``acceptTOS`` => guid, password
@@ -144,7 +144,7 @@ Please note that DECA can add or remove links at any time.
  * ``forgotPassword`` => guid
  * ``changePassword`` => newPassword, guid, password
  * ``getCredits`` => guid, password
- * ``*ban``
+ * ``ban`` => Returns internal error
  * ``v`` => a, b(Getting the captcha); a, action, g-recaptcha-response(Submitting the captcha)
  * ``*claimLoginReward``
  * ``saveSecurityQuestions`` => guid, password, answers (encoded in base64 and split by a pipe operator [|])
@@ -162,7 +162,7 @@ Please note that DECA can add or remove links at any time.
  * ``getinfo``
  
 ``fame/``
- * ``list`` => timespan(week, month, all), &charId, &accountId
+ * ``list`` => timespan (week, month, all), &charId, &accountId
  * ``challengerSeasonList`` => guid, password
  * ``challengerLeaderboard`` => accountId, charId, timespan (same as fame/list)
  * ``challengerAccountLeaderboard`` => accountId, charId, timespan (same as fame/list)
@@ -186,19 +186,19 @@ Please note that DECA can add or remove links at any time.
  * ``*create``
  * ``*update``
  * ``purchaseClassUnlock`` => guid, password, game_net_user_id, game_net, play_platform, do_login, classType
- * ``delete`` => guid, password, gameClientVersion, charId, reason (seems to be always 1), ignore
+ * ``delete`` => guid, password, charId, reason (seems to be always 1)
 
 ``inGameNews/``
  * ``getNews``
 
 ``friends/``
- * ``requestFriend`` => ignore, guid, targetName, password
- * ``getList`` => ignore, guid, gameClientVersion, password
- * ``getRequests`` => ignore, guid, gameClientVersion, password
- * ``acceptRequest`` => ignore, guid, targetName, gameClientVersion, password
- * ``rejectRequest`` => ignore, guid, targetName, gameClientVersion, password
- * ``removeFriend`` => ignore, guid, targetName, gameClientVersion, password
- * ``blockRequest`` => ignore, guid, targetName, password, gameclientVersion
+ * ``requestFriend`` => guid, targetName, password
+ * ``getList`` => guid, password
+ * ``getRequests`` => guid, password
+ * ``acceptRequest`` => guid, targetName, password
+ * ``rejectRequest`` => guid, targetName password
+ * ``removeFriend`` => guid, targetName, password
+ * ``blockRequest`` => guid, targetName, password
 
 ``pet/``
  * ``*feed``
@@ -209,7 +209,7 @@ Please note that DECA can add or remove links at any time.
 ``news/`` => Takes you to google sign in
 
 ``arena/``
- * ``getRecords`` => type(weekly, personal, alltime), guid, password
+ * ``getRecords`` => type (weekly, personal, alltime), guid, password
  * ``getPersonalBest`` => guid, password
 
 ``guild/``
@@ -229,7 +229,7 @@ Please note that DECA can add or remove links at any time.
 ``migrate/``
  * ``doMigration`` => guid, password
  * ``progress`` => guid
- * ``userAccountReset`` => guid, password
+ * ``userAccountReset`` => guid, password (returns Failure, testing environment only)
 
 ``steamworks/``
  * ``finalizePurchase`` => appid, orderid, authorized (1 or 0)
@@ -246,6 +246,7 @@ Please note that DECA can add or remove links at any time.
  * ``internalRegister`` => userId, username, gameAuthToken, guid
  * ``getoffers``
  * ``callback`` 
+ * May be related: https://docs.kongregate.com/docs/server-side-http#section-callback-format
 
 ``clientError/``
  * ``add`` => text, guid
