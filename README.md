@@ -5,6 +5,7 @@ The main goal of this project is to document endpoints in the RotMG appspot API.
 ## Root URL
 - https://realmofthemadgodhrd.appspot.com
 - https://realmofthemadgod.appspot.com (used before kabam account migration)
+- http://rot.mg (redirect to https://www.realmofthemadgod.com/)
 
 ## Subdomains
 - [http://play.realmofthemadgod.com](https://web.archive.org/web/20160630000841/http://play.realmofthemadgod.com/) (used by kabam till 2016 for unknown purpose)
@@ -65,7 +66,7 @@ Please note that DECA can add or remove links at any time.
 ``app/``
  * ``globalNews``
  * ``getLanguageStrings`` => languageType (en)
- * ``init``
+ * ``init`` => platform (standalonewindows64 or standalonewindows), key (seems to be hardcoded - 9KnJFxtTvLu2frXv for windows), guid, password
 
 ``package/``
  * ``getPackages`` => guid, password, version (seems to accept any float like 1.0)
@@ -126,7 +127,7 @@ Please note that DECA can add or remove links at any time.
  * ``acceptTOS`` => guid, password
  * ``changeEmail`` => guid, password, newGuid
  * ``playFortuneGame`` => choice, status, currency (2 for fortune tokens or 0 for gold)
- * ``rp``
+ * ``rp`` => a, b
  * ``login``
  * ``setName`` => guid, password, name
  * ``validateEmail`` (removed, changed to isEmailVerified)
@@ -190,6 +191,10 @@ Please note that DECA can add or remove links at any time.
 
 ``inGameNews/``
  * ``getNews``
+ 
+ ``unityNews/``
+* ``getNews``
+
 
 ``friends/``
  * ``requestFriend`` => guid, targetName, password
