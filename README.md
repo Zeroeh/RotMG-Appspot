@@ -161,6 +161,7 @@ Please note that DECA can add or remove links at any time.
  * ``status`` => guid, password
  * ``create``
  * ``getinfo``
+ * ``getUnitySupporters`` => guid, password, page
  
 ``fame/``
  * ``list`` => timespan (week, month, all), &charId, &accountId
