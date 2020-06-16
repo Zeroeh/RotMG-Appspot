@@ -123,7 +123,7 @@ Please note that DECA can add or remove links at any time.
 ``account/``
  * ``register`` => newPassword, entrytag, newGUID, name(not needed), isAgeVerified, guid, signedUpKabamEmail (0 or 1)
  * ``verify`` => guid, password (used by Muledump)
- * ``verifyage`` => guid, password
+ * ``verifyage`` => guid, password, ignore, isAgeVerified, gameClientVersion
  * ``acceptTOS`` => guid, password
  * ``changeEmail`` => guid, password, newGuid
  * ``playFortuneGame`` => choice, status, currency (2 for fortune tokens or 0 for gold)
