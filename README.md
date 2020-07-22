@@ -153,6 +153,7 @@ Please note that DECA can add or remove links at any time.
  * ``isEmailVerified`` => guid, password
  * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
  * ``spammer`` => Returns internal error
+ * ``servers`` => guid, password
 
 ``supportCampaign/``
  * ``claim`` => guid, password
