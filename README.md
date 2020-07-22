@@ -62,6 +62,7 @@ Please note that DECA can add or remove links at any time.
  * ``cron.yaml``
  * ``dos.yaml``
  * ``queue.yaml``
+ * ``legacy``
 
 ``app/``
  * ``globalNews``
