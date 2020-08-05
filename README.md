@@ -155,6 +155,7 @@ Please note that DECA can add or remove links at any time.
  * ``signupDecaEmail`` => notifyMe (1 or 0), guid, password, email
  * ``spammer`` => Returns internal error
  * ``servers`` => guid, password
+ * ``list`` => guid, password, type(1:ignored or 0:locked)
 
 ``supportCampaign/``
  * ``claim`` => guid, password
