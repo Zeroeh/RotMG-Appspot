@@ -68,6 +68,7 @@ Please note that DECA can add or remove links at any time.
  * ``globalNews``
  * ``getLanguageStrings`` => languageType (en)
  * ``init`` => platform (standalonewindows64 or standalonewindows), key (seems to be hardcoded - 9KnJFxtTvLu2frXv for windows), guid, password
+ * ``publicStaticData`` => dataType (powerUpSettings)
 
 ``package/``
  * ``getPackages`` => guid, password, version (seems to accept any float like 1.0)
